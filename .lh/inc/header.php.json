@@ -1,0 +1,170 @@
+{
+    "sourceFile": "inc/header.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 38,
+            "patches": [
+                {
+                    "date": 1677597568551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677668392165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n         <div class=\"logo\">\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n         <ul class=\"nav\">\n-            <li><a href=\"index.html\">Accueil</a></li>\n+            <li><a href=\"index.php\">Accueil</a></li>\n             <li><a href=\"#\">A propos</a></li>\n             <li><a href=\"#\">Services</a></li>\n             <li><a href=\"#\">S'inscrire</a></li>\n             <li><a href=\"#\">Se connecter</a></li>\n"
+                },
+                {
+                    "date": 1677683286492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,9 @@\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n         <ul class=\"nav\">\n             <li><a href=\"index.php\">Accueil</a></li>\n-            <li><a href=\"#\">A propos</a></li>\n-            <li><a href=\"#\">Services</a></li>\n+          \n             <li><a href=\"#\">S'inscrire</a></li>\n             <li><a href=\"#\">Se connecter</a></li>\n         </ul>\n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677683842080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n         </div>\n         <ul class=\"nav\">\n             <li><a href=\"index.php\">Accueil</a></li>\n           \n-            <li><a href=\"#\">S'inscrire</a></li>\n+            <li><a href=\"\">S'inscrire</a></li>\n             <li><a href=\"#\">Se connecter</a></li>\n         </ul>\n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677683847282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n         </div>\n         <ul class=\"nav\">\n             <li><a href=\"index.php\">Accueil</a></li>\n           \n-            <li><a href=\"\">S'inscrire</a></li>\n+            <li><a href=\"insc\">S'inscrire</a></li>\n             <li><a href=\"#\">Se connecter</a></li>\n         </ul>\n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677683899436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n         </div>\n         <ul class=\"nav\">\n             <li><a href=\"index.php\">Accueil</a></li>\n           \n-            <li><a href=\"insc\">S'inscrire</a></li>\n-            <li><a href=\"#\">Se connecter</a></li>\n+            <li><a href=\"inscription.php\">S'inscrire</a></li>\n+            <li><a href=\"connect.php\">Se connecter</a></li>\n         </ul>\n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677695680774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n         <div class=\"logo\">\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n         <ul class=\"nav\">\n-            <li><a href=\"index.php\">Accueil</a></li>\n+            <li><a href=\"index.php\">Article</a></li>\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n         </ul>\n"
+                },
+                {
+                    "date": 1677695714177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,11 @@\n         <div class=\"logo\">\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n         <ul class=\"nav\">\n-            <li><a href=\"index.php\">Article</a></li>\n+\n+        \n+            <li><a href=\"index.php\">Articles</a></li>\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n         </ul>\n"
+                },
+                {
+                    "date": 1677695720041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n         <ul class=\"nav\">\n \n-        \n+        <li><a href=\"\">Articles</a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n"
+                },
+                {
+                    "date": 1677695727625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n         <ul class=\"nav\">\n \n-        <li><a href=\"\">Articles</a></li>\n+        <li><a href=\"home\">Articles</a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n"
+                },
+                {
+                    "date": 1677695733641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n         <ul class=\"nav\">\n \n-        <li><a href=\"home\">Articles</a></li>\n+        <li><a href=\"home.phtml\"></a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n"
+                },
+                {
+                    "date": 1677695739223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n         <ul class=\"nav\">\n \n-        <li><a href=\"home.phtml\"></a></li>\n+        <li><a href=\"home.phtml\">Home</a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n"
+                },
+                {
+                    "date": 1677695744492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n         <ul class=\"nav\">\n \n-        <li><a href=\"home.phtml\">Home</a></li>\n+            <li><a href=\"home.phtml\">Home</a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n"
+                },
+                {
+                    "date": 1677697325310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,11 @@\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n         <ul class=\"nav\">\n \n+\n+\n+        \n             <li><a href=\"home.phtml\">Home</a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n"
+                },
+                {
+                    "date": 1677697331016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,12 @@\n         <div class=\"logo\">\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n         <ul class=\"nav\">\n+           \n \n \n \n-        \n             <li><a href=\"home.phtml\">Home</a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n"
+                },
+                {
+                    "date": 1677697339662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,12 @@\n         </div>\n         <ul class=\"nav\">\n            \n \n+                <?php\n+                    if (!isset($_SESSION['user'])) {\n+                        ?>\n \n-\n             <li><a href=\"home.phtml\">Home</a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n"
+                },
+                {
+                    "date": 1677697357421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,9 @@\n         <div class=\"logo\">\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n         <ul class=\"nav\">\n-           \n-\n-                <?php\n+                 <?php\n                     if (!isset($_SESSION['user'])) {\n                         ?>\n \n             <li><a href=\"home.phtml\">Home</a></li>\n@@ -14,5 +12,7 @@\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n         </ul>\n+\n+        \n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697388371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n         </ul>\n+        \n \n-        \n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697400582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n             <li><a href=\"index.php\">Articles</a></li>\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n-        </ul>\n+        <?php\n         \n \n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697410671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,6 +13,7 @@\n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n         <?php\n         \n+        \n \n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697418367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,8 @@\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n         <?php\n+                    }else{}\n         \n-        \n \n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697428323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n           \n             <li><a href=\"inscription.php\">S'inscrire</a></li>\n             <li><a href=\"connect.php\">Se connecter</a></li>\n         <?php\n-                    }else{}\n-        \n+                    }else{\n+                        ?>\n+                      <\n \n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697436563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n             <li><a href=\"connect.php\">Se connecter</a></li>\n         <?php\n                     }else{\n                         ?>\n-                      <\n+                      <li><a href=\"inscription.php\">S'inscrire</a></li>\n \n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697442258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n             <li><a href=\"connect.php\">Se connecter</a></li>\n         <?php\n                     }else{\n                         ?>\n-                      <li><a href=\"inscription.php\">S'inscrire</a></li>\n+                      <li><a href=\"\">S'</a></li>\n \n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697450106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n             <li><a href=\"connect.php\">Se connecter</a></li>\n         <?php\n                     }else{\n                         ?>\n-                      <li><a href=\"\">S'</a></li>\n+                      <li><a href=\"\">Deconne</a></li>\n \n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697471892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,9 @@\n             <li><a href=\"connect.php\">Se connecter</a></li>\n         <?php\n                     }else{\n                         ?>\n-                      <li><a href=\"\">Deconne</a></li>\n+                      <li><a href=\"\">Deconnection</a></li>\n+                    <?php\n \n+                    }\n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697627907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n+\n+\n+\n <header>\n         <div class=\"logo\">\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n@@ -18,5 +21,6 @@\n                       <li><a href=\"\">Deconnection</a></li>\n                     <?php\n \n                     }\n+                    ?>\n     </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697635719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n+<?php\n \n \n-\n <header>\n         <div class=\"logo\">\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n"
+                },
+                {
+                    "date": 1677697644312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n <?php\n \n+session_s\n \n+\n <header>\n         <div class=\"logo\">\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n"
+                },
+                {
+                    "date": 1677697649678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n <?php\n \n-session_s\n+session_start();\n \n+?>\n \n+\n <header>\n         <div class=\"logo\">\n             <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n         </div>\n"
+                },
+                {
+                    "date": 1677697744994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,11 @@\n             <li><a href=\"connect.php\">Se connecter</a></li>\n         <?php\n                     }else{\n                         ?>\n+                         <li><a href=\"home.phtml\">Home</a></li>\n+            <li><a href=\"index.php\">Articles</a></li>\n+          \n                       <li><a href=\"\">Deconnection</a></li>\n                     <?php\n \n                     }\n"
+                },
+                {
+                    "date": 1677697922083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n                         ?>\n                          <li><a href=\"home.phtml\">Home</a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n-                      <li><a href=\"\">Deconnection</a></li>\n+                      <li><a href=\"./\">Deconnection</a></li>\n                     <?php\n \n                     }\n                     ?>\n"
+                },
+                {
+                    "date": 1677697931088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n                         ?>\n                          <li><a href=\"home.phtml\">Home</a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n-                      <li><a href=\"./\">Deconnection</a></li>\n+                      <li><a href=\"deconnection.php\">Deconnection</a></li>\n                     <?php\n \n                     }\n                     ?>\n"
+                },
+                {
+                    "date": 1677698064023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n \n-session_start();\n \n+\n ?>\n \n \n <header>\n"
+                },
+                {
+                    "date": 1677698233998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n \n+session_start();\n \n-\n ?>\n \n \n <header>\n"
+                },
+                {
+                    "date": 1677698645863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n                          <li><a href=\"home.phtml\">Home</a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n                       <li><a href=\"deconnection.php\">Deconnection</a></li>\n+                      \n                     <?php\n \n                     }\n                     ?>\n"
+                },
+                {
+                    "date": 1677698652935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n                          <li><a href=\"home.phtml\">Home</a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n                       <li><a href=\"deconnection.php\">Deconnection</a></li>\n-                      \n+                      <li><a href=\"deconnection.php\">Deconnection</a></li>\n                     <?php\n \n                     }\n                     ?>\n"
+                },
+                {
+                    "date": 1677698658643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n                          <li><a href=\"home.phtml\">Home</a></li>\n             <li><a href=\"index.php\">Articles</a></li>\n           \n                       <li><a href=\"deconnection.php\">Deconnection</a></li>\n-                      <li><a \">Deconnection</a></li>\n+                      <li><a >Deconnection</a></li>\n                     <?php\n \n                     }\n                     ?>\n"
+                },
+                {
+                    "date": 1677698735087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n             <li><a href=\"index.php\">Articles</a></li>\n           \n                       <li><a href=\"deconnection.php\">Deconnection</a></li>\n                       <li>BIENVENUE<?php echo $_SESSION['user']['prenom']</li>\n-                   \n+                    <?php\n \n                     }\n                     ?>\n     </header>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1677597568551,
+            "name": "Commit-0",
+            "content": "<header>\n        <div class=\"logo\">\n            <h1 class=\"logo-text\"><span>READ</span>BLog</h1>\n        </div>\n        <ul class=\"nav\">\n            <li><a href=\"index.html\">Accueil</a></li>\n            <li><a href=\"#\">A propos</a></li>\n            <li><a href=\"#\">Services</a></li>\n            <li><a href=\"#\">S'inscrire</a></li>\n            <li><a href=\"#\">Se connecter</a></li>\n        </ul>\n    </header>"
+        }
+    ]
+}

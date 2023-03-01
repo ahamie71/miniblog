@@ -1,0 +1,130 @@
+{
+    "sourceFile": "admin/create.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 28,
+            "patches": [
+                {
+                    "date": 1677599135092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677599159696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n+\n+\n+\n+\n <!DOCTYPE html>\n <html lang=\"en\">\n \n     <head>\n@@ -76,72 +80,9 @@\n             <!-- // Admin Content -->\n \n         </div>\n         <!-- // Page Wrapper -->\n-        <div class=\"footer\">\n-            <div class=\"footer-content\">\n         \n-              <div class=\"footer-section about\">\n-                <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n-                <p>\n-                  Ronasdev est un petit  blog conçu pour un objectif de tutoriel sur Youtube.\n-                  Cependant un autre vrai blog est en cours de réalisation pour mes amis.\n-                   </p>\n-                <div class=\"contact\">\n-                  <span><i class=\"fas fa-phone\"></i> &nbsp; (+229) 60 93 48 17</span>\n-                  <span><i class=\"fas fa-envelope\"></i> &nbsp; ronasdev@gmail.com</span>\n-                </div>\n-                <div class=\"socials\">\n-                  <a href=\"#\"><i class=\"fab fa-facebook\"></i></a>\n-                  <a href=\"#\"><i class=\"fab fa-instagram\"></i></a>\n-                  <a href=\"#\"><i class=\"fab fa-twitter\"></i></a>\n-                  <a href=\"#\"><i class=\"fab fa-youtube\"></i></a>\n-                </div>\n-              </div>\n-        \n-              <div class=\"footer-section links\">\n-                <h2>Liens rapides</h2>\n-                <br>\n-                <ul>\n-                  <a href=\"#\">\n-                    <li>Evènements</li>\n-                  </a>\n-                  <a href=\"#\">\n-                    <li>Equipe</li>\n-                  </a>\n-                  <a href=\"#\">\n-                    <li>Mentoring</li>\n-                  </a>\n-                  <a href=\"#\">\n-                    <li>Gallerie</li>\n-                  </a>\n-                  <a href=\"#\">\n-                    <li>Termes et conditions</li>\n-                  </a>\n-                </ul>\n-              </div>\n-        \n-              <div class=\"footer-section contact-form\">\n-                <h2>Contacter nous</h2>\n-                <br>\n-                <form action=\"index.html\" method=\"post\">\n-                  <input type=\"email\" name=\"email\" class=\"text-input contact-input\" placeholder=\"Votre addresse e-mail...\">\n-                  <textarea rows=\"4\" name=\"message\" class=\"text-input contact-input\" placeholder=\"Votre message...\"></textarea>\n-                  <button type=\"submit\" class=\"btn btn-big contact-btn\">\n-                    <i class=\"fas fa-envelope\"></i>\n-                   Envoyer\n-                  </button>\n-                </form>\n-              </div>\n-        \n-            </div>\n-        \n-            <div class=\"footer-bottom\">\n-              &copy; ronasdev.com |Conçcu par Robert\n-            </div>\n-          </div>\n-\n-\n    \n     </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677599177063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,20 +19,9 @@\n         <title>Admin Section - Add Post</title>\n     </head>\n \n     <body>\n-        <header>\n-            <div class=\"logo\">\n-              <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n-            </div>\n-            <ul class=\"nav\">\n-              <li><a href=\"index.html\">Accueil</a></li>\n-              <li><a href=\"#\">A propos</a></li>\n-              <li><a href=\"#\">Services</a></li>\n-              <li><a href=\"#\">S'inscrire</a></li>\n-              <li><a href=\"#\">Se connecter</a></li> \n-            </ul>\n-          </header>\n+       \n \n         <!-- Admin Page Wrapper -->\n         <div class=\"admin-container\">\n \n"
+                },
+                {
+                    "date": 1677599185571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <title>Admin Section - Add Post</title>\n     </head>\n \n     <body>\n-       \n+        <?php include\n \n         <!-- Admin Page Wrapper -->\n         <div class=\"admin-container\">\n \n"
+                },
+                {
+                    "date": 1677599191796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <title>Admin Section - Add Post</title>\n     </head>\n \n     <body>\n-        <?php include\n+        <?php include '../'\n \n         <!-- Admin Page Wrapper -->\n         <div class=\"admin-container\">\n \n"
+                },
+                {
+                    "date": 1677599198945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <title>Admin Section - Add Post</title>\n     </head>\n \n     <body>\n-        <?php include '../'\n+        <?php include '../inc/header.php'; ?>\n \n         <!-- Admin Page Wrapper -->\n         <div class=\"admin-container\">\n \n"
+                },
+                {
+                    "date": 1677599512108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n \n \n                 <div class=\"container\">\n \n-                    <h2 class=\"page-title\">Manage Posts</h2>\n+                    <h2 class=\"page-title\"> Gestions des a Posts</h2>\n                     <form action=\"create.php\" enctype=\"multipart/form-data\" method=\"post\">\n                         <div>\n                             <label>Author</label>\n                             <input type=\"text\" name=\"author\"  class=\"text-input\">\n"
+                },
+                {
+                    "date": 1677599522026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n \n \n                 <div class=\"container\">\n \n-                    <h2 class=\"page-title\"> Gestions des a Posts</h2>\n+                    <h2 class=\"page-title\"> Gestions des </h2>\n                     <form action=\"create.php\" enctype=\"multipart/form-data\" method=\"post\">\n                         <div>\n                             <label>Author</label>\n                             <input type=\"text\" name=\"author\"  class=\"text-input\">\n"
+                },
+                {
+                    "date": 1677599577744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,16 +31,16 @@\n \n             <!-- Admin Content -->\n             <div class=\"admin-content\">\n                 <div class=\"button-group\">\n-                    <a href=\"create.html\" class=\"btn btn-big\">Add Post</a>\n+                    <a href=\"create.html\" class=\"btn btn-big\">APost</a>\n                     <a href=\"index.html\" class=\"btn btn-big\">Manage Posts</a>\n                 </div>\n \n \n                 <div class=\"container\">\n \n-                    <h2 class=\"page-title\"> Gestions des </h2>\n+                    <h2 class=\"page-title\"> Gestions des article</h2>\n                     <form action=\"create.php\" enctype=\"multipart/form-data\" method=\"post\">\n                         <div>\n                             <label>Author</label>\n                             <input type=\"text\" name=\"author\"  class=\"text-input\">\n"
+                },
+                {
+                    "date": 1677599584296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \n             <!-- Admin Content -->\n             <div class=\"admin-content\">\n                 <div class=\"button-group\">\n-                    <a href=\"create.html\" class=\"btn btn-big\">APost</a>\n+                    <a href=\"create.html\" class=\"btn btn-big\">Ajout d'un article</a>\n                     <a href=\"index.html\" class=\"btn btn-big\">Manage Posts</a>\n                 </div>\n \n \n"
+                },
+                {
+                    "date": 1677599617374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n             <!-- Admin Content -->\n             <div class=\"admin-content\">\n                 <div class=\"button-group\">\n                     <a href=\"create.html\" class=\"btn btn-big\">Ajout d'un article</a>\n-                    <a href=\"index.html\" class=\"btn btn-big\">Manage Posts</a>\n+                    <a href=\"index.html\" class=\"btn btn-big\"> Gerer des  Posts</a>\n                 </div>\n \n \n                 <div class=\"container\">\n"
+                },
+                {
+                    "date": 1677609172585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,15 +32,15 @@\n             <!-- Admin Content -->\n             <div class=\"admin-content\">\n                 <div class=\"button-group\">\n                     <a href=\"create.html\" class=\"btn btn-big\">Ajout d'un article</a>\n-                    <a href=\"index.html\" class=\"btn btn-big\"> Gerer des  Posts</a>\n+                    <a href=\"index.html\" class=\"btn btn-big\"> Gerer des articles</a>\n                 </div>\n \n \n                 <div class=\"container\">\n \n-                    <h2 class=\"page-title\"> Gestions des article</h2>\n+                    <h2 class=\"page-title\"> Gestions des articles</h2>\n                     <form action=\"create.php\" enctype=\"multipart/form-data\" method=\"post\">\n                         <div>\n                             <label>Author</label>\n                             <input type=\"text\" name=\"author\"  class=\"text-input\">\n"
+                },
+                {
+                    "date": 1677610209995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n \n+<?php\n \n \n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677610215186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,12 @@\n \n <?php\n \n+include\n+?>\n \n \n+\n <!DOCTYPE html>\n <html lang=\"en\">\n \n     <head>\n"
+                },
+                {
+                    "date": 1677610222884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n <?php\n \n-include\n+include()\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610228100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n <?php\n \n-include()\n+include(.)\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610233682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n <?php\n \n-include(.)\n+include(../refa)\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610240281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n <?php\n \n-include(../refa)\n+include('../refac)\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610245923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n <?php\n \n-include('../refac)\n+include('../refactoring.php');\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610277124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n \n <?php\n \n-include('../refactoring.php');\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610282586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n \n <?php\n \n+require\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610292809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n <?php\n \n-require\n+require_once('refactoring.')\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610298248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n <?php\n \n-require_once('refactoring.')\n+require_once('../refactoring.php')\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610441467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n \n <?php\n \n require_once('../refactoring.php')\n+\n+\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610448703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <?php\n \n require_once('../refactoring.php')\n \n-\n+if(isset)\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610490058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n \n <?php\n \n-require_once('../refactoring.php')\n+require_once('../refactoring.php');\n \n-if(isset)\n+if(isset())\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610542582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <?php\n \n require_once('../refactoring.php');\n \n-if(isset())\n+if(isset($_POST))\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677610548635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <?php\n \n require_once('../refactoring.php');\n \n-if(isset($_POST['aa']))\n+if(isset($_POST['a']))\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1677611708139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n }\n $_POST['content']= nl2br(htmlentities($_POST['content']));\n \n //enregistrement de l'article \n- create($_POST['content'],$_POST['tit']);\n+ create($_POST['content'],$_POST['tit@']);\n \n ?>\n \n \n"
+                }
+            ],
+            "date": 1677599135092,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n\n        <!-- Custom Styling -->\n        <link rel=\"stylesheet\" href=\"../css/style.css\">\n\n        <!-- Admin Styling -->\n        <link rel=\"stylesheet\" href=\"../css/admin.css\">\n\n        <title>Admin Section - Add Post</title>\n    </head>\n\n    <body>\n        <header>\n            <div class=\"logo\">\n              <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n            </div>\n            <ul class=\"nav\">\n              <li><a href=\"index.html\">Accueil</a></li>\n              <li><a href=\"#\">A propos</a></li>\n              <li><a href=\"#\">Services</a></li>\n              <li><a href=\"#\">S'inscrire</a></li>\n              <li><a href=\"#\">Se connecter</a></li> \n            </ul>\n          </header>\n\n        <!-- Admin Page Wrapper -->\n        <div class=\"admin-container\">\n\n        \n            <!-- // Left Sidebar -->\n\n\n            <!-- Admin Content -->\n            <div class=\"admin-content\">\n                <div class=\"button-group\">\n                    <a href=\"create.html\" class=\"btn btn-big\">Add Post</a>\n                    <a href=\"index.html\" class=\"btn btn-big\">Manage Posts</a>\n                </div>\n\n\n                <div class=\"container\">\n\n                    <h2 class=\"page-title\">Manage Posts</h2>\n                    <form action=\"create.php\" enctype=\"multipart/form-data\" method=\"post\">\n                        <div>\n                            <label>Author</label>\n                            <input type=\"text\" name=\"author\"  class=\"text-input\">\n                        </div>\n                        <div>\n                            <label>Title</label>\n                            <input type=\"text\" name=\"title\"  class=\"text-input\">\n                        </div>\n                        <div>\n                            <label>Contenu</label>\n                            <textarea cols=\"130\", rows=\"10\" name=\"content\" id=\"body\"></textarea>\n                        </div>\n                        <div>\n                            <label>Image</label>\n                            <input type=\"file\" name=\"image\"  class=\"text-input\">\n                        </div>\n                        \n                        <div>\n                            <button type=\"submit\" name=\"add-post\" class=\"btn btn-big\">Add Post</button>\n                        </div>\n                    </form>\n\n                </div>\n\n            </div>\n            <!-- // Admin Content -->\n\n        </div>\n        <!-- // Page Wrapper -->\n        <div class=\"footer\">\n            <div class=\"footer-content\">\n        \n              <div class=\"footer-section about\">\n                <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n                <p>\n                  Ronasdev est un petit  blog conçu pour un objectif de tutoriel sur Youtube.\n                  Cependant un autre vrai blog est en cours de réalisation pour mes amis.\n                   </p>\n                <div class=\"contact\">\n                  <span><i class=\"fas fa-phone\"></i> &nbsp; (+229) 60 93 48 17</span>\n                  <span><i class=\"fas fa-envelope\"></i> &nbsp; ronasdev@gmail.com</span>\n                </div>\n                <div class=\"socials\">\n                  <a href=\"#\"><i class=\"fab fa-facebook\"></i></a>\n                  <a href=\"#\"><i class=\"fab fa-instagram\"></i></a>\n                  <a href=\"#\"><i class=\"fab fa-twitter\"></i></a>\n                  <a href=\"#\"><i class=\"fab fa-youtube\"></i></a>\n                </div>\n              </div>\n        \n              <div class=\"footer-section links\">\n                <h2>Liens rapides</h2>\n                <br>\n                <ul>\n                  <a href=\"#\">\n                    <li>Evènements</li>\n                  </a>\n                  <a href=\"#\">\n                    <li>Equipe</li>\n                  </a>\n                  <a href=\"#\">\n                    <li>Mentoring</li>\n                  </a>\n                  <a href=\"#\">\n                    <li>Gallerie</li>\n                  </a>\n                  <a href=\"#\">\n                    <li>Termes et conditions</li>\n                  </a>\n                </ul>\n              </div>\n        \n              <div class=\"footer-section contact-form\">\n                <h2>Contacter nous</h2>\n                <br>\n                <form action=\"index.html\" method=\"post\">\n                  <input type=\"email\" name=\"email\" class=\"text-input contact-input\" placeholder=\"Votre addresse e-mail...\">\n                  <textarea rows=\"4\" name=\"message\" class=\"text-input contact-input\" placeholder=\"Votre message...\"></textarea>\n                  <button type=\"submit\" class=\"btn btn-big contact-btn\">\n                    <i class=\"fas fa-envelope\"></i>\n                   Envoyer\n                  </button>\n                </form>\n              </div>\n        \n            </div>\n        \n            <div class=\"footer-bottom\">\n              &copy; ronasdev.com |Conçcu par Robert\n            </div>\n          </div>\n\n\n   \n    </body>\n\n</html>"
+        }
+    ]
+}

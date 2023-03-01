@@ -1,0 +1,306 @@
+{
+    "sourceFile": "admin/index.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 72,
+            "patches": [
+                {
+                    "date": 1677598172673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677598322505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n+\n+\n+\n+\n <!DOCTYPE html>\n <html lang=\"en\">\n \n     <head>\n"
+                },
+                {
+                    "date": 1677598336183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n+<?php\n \n+requir\n \n \n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677598343448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <?php\n \n-requir\n+require_once()\n \n \n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677598351716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <?php\n \n-require_once()\n+require_once('refactoring.php')\n \n \n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677598358297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <?php\n \n-require_once('refactoring.php')\n+require_once('admin/refactoring.php')\n \n \n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677598377046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <?php\n \n-require_once('admin/refactoring.php')\n+require_once('/refactoring.php')\n \n \n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677598389159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <?php\n \n-require_once('/refactoring.php')\n+require_once('../refactoring.php')\n \n+?>\n \n-\n <!DOCTYPE html>\n <html lang=\"en\">\n \n     <head>\n"
+                },
+                {
+                    "date": 1677598437240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n \n require_once('../refactoring.php')\n-\n+$posts= \n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677598451042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n \n-require_once('../refactoring.php')\n-$posts= \n+require_once('../refactoring.php');\n+$posts= selectAll();\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677598559519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <?php\n \n require_once('../refactoring.php');\n $posts= selectAll();\n+var\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677598566384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <?php\n \n require_once('../refactoring.php');\n $posts= selectAll();\n-var\n+var_dump($posts);\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677598577449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <?php\n \n require_once('../refactoring.php');\n $posts= selectAll();\n-var_dump($posts);\n+prinnt($posts);\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677598610322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <?php\n \n require_once('../refactoring.php');\n $posts= selectAll();\n-prinnt($posts);\n+\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677598617773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,20 +22,9 @@\n         <title>Section Admin - Gestions des articles</title>\n     </head>\n \n     <body>\n-        <header>\n-            <div class=\"logo\">\n-              <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n-            </div>\n-            <ul class=\"nav\">\n-              <li><a href=\"index.html\">Accueil</a></li>\n-              <li><a href=\"#\">A propos</a></li>\n-              <li><a href=\"#\">Services</a></li>\n-              <li><a href=\"#\">S'inscrire</a></li>\n-              <li><a href=\"#\">Se connecter</a></li> \n-            </ul>\n-          </header>\n+        \n \n         <!-- Admin Page Wrapper -->\n         <div class=\"admin-container\">\n \n"
+                },
+                {
+                    "date": 1677598624007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         <title>Section Admin - Gestions des articles</title>\n     </head>\n \n     <body>\n-        \n+           <\n \n         <!-- Admin Page Wrapper -->\n         <div class=\"admin-container\">\n \n"
+                },
+                {
+                    "date": 1677598629993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         <title>Section Admin - Gestions des articles</title>\n     </head>\n \n     <body>\n-           <\n+           <?php include ''\n \n         <!-- Admin Page Wrapper -->\n         <div class=\"admin-container\">\n \n"
+                },
+                {
+                    "date": 1677598636096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         <title>Section Admin - Gestions des articles</title>\n     </head>\n \n     <body>\n-           <?php include ''\n+           <?php include '../inc'\n \n         <!-- Admin Page Wrapper -->\n         <div class=\"admin-container\">\n \n"
+                },
+                {
+                    "date": 1677598665516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         <title>Section Admin - Gestions des articles</title>\n     </head>\n \n     <body>\n-           <?php include '../inc'\n+           <?php include '../inc/header.php'; ?>\n \n         <!-- Admin Page Wrapper -->\n         <div class=\"admin-container\">\n \n@@ -51,22 +51,9 @@\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n-                                <tr>\n-                                    <td>2</td>\n-                                    <td>Titre</td>\n-                                    <td>Ronas</td>\n-                                    <td><a href=\"\" class=\"edit\">edit</a></td>\n-                                    <td><a href=\"\" class=\"delete\">delete</a></td>  \n-                                </tr>\n-                                <tr>\n-                                    <td>3</td>\n-                                    <td>Titre</td>\n-                                    <td>Ronas</td>\n-                                    <td><a href=\"\" class=\"edit\">edit</a></td>\n-                                    <td><a href=\"\" class=\"delete\">delete</a></td>  \n-                                </tr>\n+                               \n                         </tbody>\n                     </table>\n                 </div>\n             </div>\n"
+                },
+                {
+                    "date": 1677598685164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,71 +58,8 @@\n                 </div>\n             </div>\n         </div>\n         \n-    <div class=\"footer\">\n-        <div class=\"footer-content\">\n     \n-          <div class=\"footer-section about\">\n-            <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n-            <p>\n-              Ronasdev est un petit  blog conçu pour un objectif de tutoriel sur Youtube.\n-              Cependant un autre vrai blog est en cours de réalisation pour mes amis.\n-               </p>\n-            <div class=\"contact\">\n-              <span><i class=\"fas fa-phone\"></i> &nbsp; (+229) 60 93 48 17</span>\n-              <span><i class=\"fas fa-envelope\"></i> &nbsp; ronasdev@gmail.com</span>\n-            </div>\n-            <div class=\"socials\">\n-              <a href=\"#\"><i class=\"fab fa-facebook\"></i></a>\n-              <a href=\"#\"><i class=\"fab fa-instagram\"></i></a>\n-              <a href=\"#\"><i class=\"fab fa-twitter\"></i></a>\n-              <a href=\"#\"><i class=\"fab fa-youtube\"></i></a>\n-            </div>\n-          </div>\n-    \n-          <div class=\"footer-section links\">\n-            <h2>Liens rapides</h2>\n-            <br>\n-            <ul>\n-              <a href=\"#\">\n-                <li>Evènements</li>\n-              </a>\n-              <a href=\"#\">\n-                <li>Equipe</li>\n-              </a>\n-              <a href=\"#\">\n-                <li>Mentoring</li>\n-              </a>\n-              <a href=\"#\">\n-                <li>Gallerie</li>\n-              </a>\n-              <a href=\"#\">\n-                <li>Termes et conditions</li>\n-              </a>\n-            </ul>\n-          </div>\n-    \n-          <div class=\"footer-section contact-form\">\n-            <h2>Contacter nous</h2>\n-            <br>\n-            <form action=\"index.html\" method=\"post\">\n-              <input type=\"email\" name=\"email\" class=\"text-input contact-input\" placeholder=\"Votre addresse e-mail...\">\n-              <textarea rows=\"4\" name=\"message\" class=\"text-input contact-input\" placeholder=\"Votre message...\"></textarea>\n-              <button type=\"submit\" class=\"btn btn-big contact-btn\">\n-                <i class=\"fas fa-envelope\"></i>\n-               Envoyer\n-              </button>\n-            </form>\n-          </div>\n-    \n-        </div>\n-    \n-        <div class=\"footer-bottom\">\n-          &copy; ronasdev.com| Conçu par Robert\n-        </div>\n-      </div>\n-\n-\n     </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677598692426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,8 @@\n                 </div>\n             </div>\n         </div>\n         \n-    \n+    <?php include()\n     </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677598699347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,8 @@\n                 </div>\n             </div>\n         </div>\n         \n-    <?php include()\n+    <?php include(''../inc/)\n     </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677598707178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,8 @@\n                 </div>\n             </div>\n         </div>\n         \n-    <?php include(''../inc/)\n+    <?php include('../inc/footer.php'); ?>\n     </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677598745112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n                     <a href=\"create.html\" class=\"btn btn-big\">Ajouter un article</a>\n                     <a href=\"index.html\" class=\"btn btn-big\">Gérer des articles</a>\n                 </div>\n                 <div class=\"container\">\n-                    <h2 class=\"page-title\">Manage Posts</h2>\n+                    <h2 class=\"page-title\">Gestion des articles</h2>\n                     <table>\n                         <thead>\n                             <th>SN</th>\n                             <th>Title</th>\n"
+                },
+                {
+                    "date": 1677598786062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n                             <th>Author</th>\n                             <th colspan=\"3\">Action</th>\n                         </thead>\n                         <tbody>\n-                       \n+                                   <\n                                 <tr>\n                                     <td>1</td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n"
+                },
+                {
+                    "date": 1677598801509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n                             <th>Author</th>\n                             <th colspan=\"3\">Action</th>\n                         </thead>\n                         <tbody>\n-                                   <\n+                                   <?php forech\n                                 <tr>\n                                     <td>1</td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n"
+                },
+                {
+                    "date": 1677598809760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n                             <th>Author</th>\n                             <th colspan=\"3\">Action</th>\n                         </thead>\n                         <tbody>\n-                                   <?php forech\n+                                   <?php for\n                                 <tr>\n                                     <td>1</td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n"
+                },
+                {
+                    "date": 1677598820093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n                             <th>Author</th>\n                             <th colspan=\"3\">Action</th>\n                         </thead>\n                         <tbody>\n-                                   <?php for\n+                                   <?php foreach( $post)\n                                 <tr>\n                                     <td>1</td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n"
+                },
+                {
+                    "date": 1677598825581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n                             <th>Author</th>\n                             <th colspan=\"3\">Action</th>\n                         </thead>\n                         <tbody>\n-                                   <?php foreach( $post)\n+                                   <?php foreach( $posts as post)\n                                 <tr>\n                                     <td>1</td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n"
+                },
+                {
+                    "date": 1677598856945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n                             <th>Author</th>\n                             <th colspan=\"3\">Action</th>\n                         </thead>\n                         <tbody>\n-                                   <?php foreach( $posts as post)\n+                                   <?php foreach( $posts as $key=>$post)\n                                 <tr>\n                                     <td>1</td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n"
+                },
+                {
+                    "date": 1677598868692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n                             <th>Author</th>\n                             <th colspan=\"3\">Action</th>\n                         </thead>\n                         <tbody>\n-                                   <?php foreach( $posts as $key=>$post)\n+                                   <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n                                     <td>1</td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n"
+                },
+                {
+                    "date": 1677598876278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,9 @@\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n+                                \n                                \n                         </tbody>\n                     </table>\n                 </div>\n"
+                },
+                {
+                    "date": 1677598884700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n-                                \n+                                <?php endforeach;\n                                \n                         </tbody>\n                     </table>\n                 </div>\n"
+                },
+                {
+                    "date": 1677598894265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,15 +45,15 @@\n                         </thead>\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n-                                    <td>1</td>\n+                                    <td></td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n-                                <?php endforeach;\n+                                <?php endforeach;?>\n                                \n                         </tbody>\n                     </table>\n                 </div>\n"
+                },
+                {
+                    "date": 1677598900170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         </thead>\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n-                                    <td></td>\n+                                    <td><</td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n"
+                },
+                {
+                    "date": 1677598914141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         </thead>\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n-                                    <td><</td>\n+                                    <td><?</td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n"
+                },
+                {
+                    "date": 1677598919228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         </thead>\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n-                                    <td><?</td>\n+                                    <td><?= echo</td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n"
+                },
+                {
+                    "date": 1677598930903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         </thead>\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n-                                    <td><?= echo</td>\n+                                    <td><?= echo $key</td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n"
+                },
+                {
+                    "date": 1677598936151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         </thead>\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n-                                    <td><?= echo $key</td>\n+                                    <td><?= echo $key +1 </td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n"
+                },
+                {
+                    "date": 1677598948478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         </thead>\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n-                                    <td><?= echo $key +1 </td>\n+                                    <td><?= $key +1 ?></td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n"
+                },
+                {
+                    "date": 1677598961798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         </thead>\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n-                                    <td><?= $key +1 ?></td>\n+                                    <td><?= $key +1; ?></td>\n                                     <td>Titre</td>\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n"
+                },
+                {
+                    "date": 1677598968180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n-                                    <td>Titre</td>\n+                                    <td>/td>\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n"
+                },
+                {
+                    "date": 1677598975068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n-                                    <td>/td>\n+                                    <td><?=</td>\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n"
+                },
+                {
+                    "date": 1677598980643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n-                                    <td><?=</td>\n+                                    <td><?= $post[</td>\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n"
+                },
+                {
+                    "date": 1677598988263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n-                                    <td><?= $post[</td>\n+                                    <td><?= $post['title']</td>\n                                     <td>Ronas</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n"
+                },
+                {
+                    "date": 1677598997959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,10 +46,10 @@\n                         <tbody>\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n-                                    <td><?= $post['title']</td>\n-                                    <td>Ronas</td>\n+                                    <td><?= $post['title']?></td>\n+                                    <td></td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n"
+                },
+                {
+                    "date": 1677599006468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n-                                    <td></td>\n+                                    <td><?= $post</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n"
+                },
+                {
+                    "date": 1677599015287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n-                                    <td><?= $post</td>\n+                                    <td><?= $post['author'</td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n"
+                },
+                {
+                    "date": 1677599057939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n                                    <?php foreach( $posts as $key=>$post):?>\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n-                                    <td><?= $post['author'</td>\n+                                    <td><?= $post['author']?></td>\n                                     <td><a href=\"\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n@@ -59,8 +59,8 @@\n                 </div>\n             </div>\n         </div>\n         \n-    <?php include('../inc/footer.php'); ?>\n+   \n     </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677610122360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \n             <!-- Admin Content -->\n             <div class=\"admin-content\">\n                 <div class=\"button-group\">\n-                    <a href=\"create.html\" class=\"btn btn-big\">Ajouter un article</a>\n+                    <a href=\"create.php\" class=\"btn btn-big\">Ajouter un article</a>\n                     <a href=\"index.html\" class=\"btn btn-big\">Gérer des articles</a>\n                 </div>\n                 <div class=\"container\">\n                     <h2 class=\"page-title\">Gestion des articles</h2>\n"
+                },
+                {
+                    "date": 1677610352491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n                 <div class=\"container\">\n                     <h2 class=\"page-title\">Gestion des articles</h2>\n                     <table>\n                         <thead>\n-                            <th>SN</th>\n+                            <th></th>\n                             <th>Title</th>\n                             <th>Author</th>\n                             <th colspan=\"3\">Action</th>\n                         </thead>\n"
+                },
+                {
+                    "date": 1677659009655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n                 <div class=\"container\">\n                     <h2 class=\"page-title\">Gestion des articles</h2>\n                     <table>\n                         <thead>\n-                            <th></th>\n+                            <th>ID</th>\n                             <th>Title</th>\n                             <th>Author</th>\n                             <th colspan=\"3\">Action</th>\n                         </thead>\n@@ -48,9 +48,9 @@\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n-                                    <td><a href=\"\" class=\"edit\">edit</a></td>\n+                                    <td><a href=\"edit\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n"
+                },
+                {
+                    "date": 1677659391193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n-                                    <td><a href=\"edit\" class=\"edit\">edit</a></td>\n+                                    <td><a href=\"edit.php?id\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n"
+                },
+                {
+                    "date": 1677659396436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n-                                    <td><a href=\"edit.php?id\" class=\"edit\">edit</a></td>\n+                                    <td><a href=\"edit.php?id<?\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n"
+                },
+                {
+                    "date": 1677659405448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n-                                    <td><a href=\"edit.php?id<?\" class=\"edit\">edit</a></td>\n+                                    <td><a href=\"edit.php?id<ph\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n"
+                },
+                {
+                    "date": 1677659414273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n-                                    <td><a href=\"edit.php?id<ph\" class=\"edit\">edit</a></td>\n+                                    <td><a href=\"edit.php?id<?php echo $\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n"
+                },
+                {
+                    "date": 1677659422210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n-                                    <td><a href=\"edit.php?id<?php echo $\" class=\"edit\">edit</a></td>\n+                                    <td><a href=\"edit.php?id<?php echo $post['id\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n"
+                },
+                {
+                    "date": 1677659428547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n-                                    <td><a href=\"edit.php?id<?php echo $post['id\" class=\"edit\">edit</a></td>\n+                                    <td><a href=\"edit.php?id<?php echo $post['id']?>\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n"
+                },
+                {
+                    "date": 1677663901521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n-                                    <td><a href=\"edit.php?id<?php echo $post['id']?>\" class=\"edit\">edit</a></td>\n+                                    <td><a href=\"edit.php?id=<?php echo $post['id']?>\" class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n"
+                },
+                {
+                    "date": 1677663922613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n-                                    <td><a href=\"edit.php?id=<?php echo $post['id']?>\" class=\"edit\">edit</a></td>\n+                                    <td><a href=\"edit.php?id=<?php echo $post['id']?>\"class=\"edit\">edit</a></td>\n                                     <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n"
+                },
+                {
+                    "date": 1677674919465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,10 +48,10 @@\n                                 <tr>\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n-                                    <td><a href=\"edit.php?id=<?php echo $post['id']?>\"class=\"edit\">edit</a></td>\n-                                    <td><a href=\"\" class=\"delete\">delete</a></td>  \n+                                    <td><a href=\"edit.php?id=<?php echo $post['id']?>\" class=\"edit\">edit</a></td>\n+                                    <td><a href=\"edit\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n                         </tbody>\n"
+                },
+                {
+                    "date": 1677674924703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n                                     <td><a href=\"edit.php?id=<?php echo $post['id']?>\" class=\"edit\">edit</a></td>\n-                                    <td><a href=\"edit\" class=\"delete\">delete</a></td>  \n+                                    <td><a href=\"edit.\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n                         </tbody>\n"
+                },
+                {
+                    "date": 1677674937379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n                                     <td><a href=\"edit.php?id=<?php echo $post['id']?>\" class=\"edit\">edit</a></td>\n-                                    <td><a href=\"edit.\" class=\"delete\">delete</a></td>  \n+                                    <td><a href=\"edit.php?\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n                         </tbody>\n"
+                },
+                {
+                    "date": 1677674944586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n                                     <td><a href=\"edit.php?id=<?php echo $post['id']?>\" class=\"edit\">edit</a></td>\n-                                    <td><a href=\"edit.php?\" class=\"delete\">delete</a></td>  \n+                                    <td><a href=\"edit.php?delete_id\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n                         </tbody>\n"
+                },
+                {
+                    "date": 1677674954993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n                                     <td><a href=\"edit.php?id=<?php echo $post['id']?>\" class=\"edit\">edit</a></td>\n-                                    <td><a href=\"edit.php?delete_id\" class=\"delete\">delete</a></td>  \n+                                    <td><a href=\"edit.php?delete_id=<?php echo\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n                         </tbody>\n"
+                },
+                {
+                    "date": 1677674960384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n                                     <td><a href=\"edit.php?id=<?php echo $post['id']?>\" class=\"edit\">edit</a></td>\n-                                    <td><a href=\"edit.php?delete_id=<?php echo\" class=\"delete\">delete</a></td>  \n+                                    <td><a href=\"edit.php?delete_id=<?php echo $post['i\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n                         </tbody>\n"
+                },
+                {
+                    "date": 1677674966369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n                                     <td><a href=\"edit.php?id=<?php echo $post['id']?>\" class=\"edit\">edit</a></td>\n-                                    <td><a href=\"edit.php?delete_id=<?php echo $post['i\" class=\"delete\">delete</a></td>  \n+                                    <td><a href=\"edit.php?delete_id=<?php echo $post['id\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n                         </tbody>\n"
+                },
+                {
+                    "date": 1677675623644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,9 @@\n             <!-- Admin Content -->\n             <div class=\"admin-content\">\n                 <div class=\"button-group\">\n                     <a href=\"create.php\" class=\"btn btn-big\">Ajouter un article</a>\n-                    <a href=\"index.html\" class=\"btn btn-big\">Gérer des articles</a>\n-                </div>\n+                    \n                 <div class=\"container\">\n                     <h2 class=\"page-title\">Gestion des articles</h2>\n                     <table>\n                         <thead>\n@@ -49,9 +48,9 @@\n                                     <td><?= $key +1; ?></td>\n                                     <td><?= $post['title']?></td>\n                                     <td><?= $post['author']?></td>\n                                     <td><a href=\"edit.php?id=<?php echo $post['id']?>\" class=\"edit\">edit</a></td>\n-                                    <td><a href=\"edit.php?delete_id=<?php echo $post['id\" class=\"delete\">delete</a></td>  \n+                                    <td><a href=\"edit.php?delete_id=<?php echo $post['id']?>\" class=\"delete\">delete</a></td>  \n                                 </tr>\n                                 <?php endforeach;?>\n                                \n                         </tbody>\n"
+                },
+                {
+                    "date": 1677682592234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,17 @@\n <?php\n \n require_once('../refactoring.php');\n+\n+$perPage= 3;\n+$nombreTotal= pagination();\n+\n+$noPage= 1;\n+$pages = ceil($nombreTotal/$perPage);\n+if (isset($_GET['page'])) {\n+    $noPage = $_GET['page'];\n+    \n+  }\n $posts= selectAll();\n \n ?>\n \n"
+                },
+                {
+                    "date": 1677682625859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <?php\n \n require_once('../refactoring.php');\n \n-$perPage= 3;\n+$perPage= 5 ;\n $nombreTotal= pagination();\n \n $noPage= 1;\n $pages = ceil($nombreTotal/$perPage);\n"
+                },
+                {
+                    "date": 1677682638348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n if (isset($_GET['page'])) {\n     $noPage = $_GET['page'];\n     \n   }\n-$posts= selectAll();\n+$posts= selectAll($no);\n \n ?>\n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677682644313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n if (isset($_GET['page'])) {\n     $noPage = $_GET['page'];\n     \n   }\n-$posts= selectAll($no);\n+$posts= selectAll($noPage,$);\n \n ?>\n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677682942910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n if (isset($_GET['page'])) {\n     $noPage = $_GET['page'];\n     \n   }\n-$posts= selectAll($noPage,$);\n+$posts= selectAll($noPage,$perPage);\n \n ?>\n \n <!DOCTYPE html>\n@@ -68,8 +68,9 @@\n                 </div>\n             </div>\n         </div>\n         \n+        \n    \n     </body>\n \n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1677598172673,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n\n        <!-- Custom Styling -->\n        <link rel=\"stylesheet\" href=\"../css/style.css\">\n\n        <!-- Admin Styling -->\n        <link rel=\"stylesheet\" href=\"../css/admin.css\">\n\n        <title>Section Admin - Gestions des articles</title>\n    </head>\n\n    <body>\n        <header>\n            <div class=\"logo\">\n              <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n            </div>\n            <ul class=\"nav\">\n              <li><a href=\"index.html\">Accueil</a></li>\n              <li><a href=\"#\">A propos</a></li>\n              <li><a href=\"#\">Services</a></li>\n              <li><a href=\"#\">S'inscrire</a></li>\n              <li><a href=\"#\">Se connecter</a></li> \n            </ul>\n          </header>\n\n        <!-- Admin Page Wrapper -->\n        <div class=\"admin-container\">\n\n            <!-- Admin Content -->\n            <div class=\"admin-content\">\n                <div class=\"button-group\">\n                    <a href=\"create.html\" class=\"btn btn-big\">Ajouter un article</a>\n                    <a href=\"index.html\" class=\"btn btn-big\">Gérer des articles</a>\n                </div>\n                <div class=\"container\">\n                    <h2 class=\"page-title\">Manage Posts</h2>\n                    <table>\n                        <thead>\n                            <th>SN</th>\n                            <th>Title</th>\n                            <th>Author</th>\n                            <th colspan=\"3\">Action</th>\n                        </thead>\n                        <tbody>\n                       \n                                <tr>\n                                    <td>1</td>\n                                    <td>Titre</td>\n                                    <td>Ronas</td>\n                                    <td><a href=\"\" class=\"edit\">edit</a></td>\n                                    <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                </tr>\n                                <tr>\n                                    <td>2</td>\n                                    <td>Titre</td>\n                                    <td>Ronas</td>\n                                    <td><a href=\"\" class=\"edit\">edit</a></td>\n                                    <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                </tr>\n                                <tr>\n                                    <td>3</td>\n                                    <td>Titre</td>\n                                    <td>Ronas</td>\n                                    <td><a href=\"\" class=\"edit\">edit</a></td>\n                                    <td><a href=\"\" class=\"delete\">delete</a></td>  \n                                </tr>\n                        </tbody>\n                    </table>\n                </div>\n            </div>\n        </div>\n        \n    <div class=\"footer\">\n        <div class=\"footer-content\">\n    \n          <div class=\"footer-section about\">\n            <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n            <p>\n              Ronasdev est un petit  blog conçu pour un objectif de tutoriel sur Youtube.\n              Cependant un autre vrai blog est en cours de réalisation pour mes amis.\n               </p>\n            <div class=\"contact\">\n              <span><i class=\"fas fa-phone\"></i> &nbsp; (+229) 60 93 48 17</span>\n              <span><i class=\"fas fa-envelope\"></i> &nbsp; ronasdev@gmail.com</span>\n            </div>\n            <div class=\"socials\">\n              <a href=\"#\"><i class=\"fab fa-facebook\"></i></a>\n              <a href=\"#\"><i class=\"fab fa-instagram\"></i></a>\n              <a href=\"#\"><i class=\"fab fa-twitter\"></i></a>\n              <a href=\"#\"><i class=\"fab fa-youtube\"></i></a>\n            </div>\n          </div>\n    \n          <div class=\"footer-section links\">\n            <h2>Liens rapides</h2>\n            <br>\n            <ul>\n              <a href=\"#\">\n                <li>Evènements</li>\n              </a>\n              <a href=\"#\">\n                <li>Equipe</li>\n              </a>\n              <a href=\"#\">\n                <li>Mentoring</li>\n              </a>\n              <a href=\"#\">\n                <li>Gallerie</li>\n              </a>\n              <a href=\"#\">\n                <li>Termes et conditions</li>\n              </a>\n            </ul>\n          </div>\n    \n          <div class=\"footer-section contact-form\">\n            <h2>Contacter nous</h2>\n            <br>\n            <form action=\"index.html\" method=\"post\">\n              <input type=\"email\" name=\"email\" class=\"text-input contact-input\" placeholder=\"Votre addresse e-mail...\">\n              <textarea rows=\"4\" name=\"message\" class=\"text-input contact-input\" placeholder=\"Votre message...\"></textarea>\n              <button type=\"submit\" class=\"btn btn-big contact-btn\">\n                <i class=\"fas fa-envelope\"></i>\n               Envoyer\n              </button>\n            </form>\n          </div>\n    \n        </div>\n    \n        <div class=\"footer-bottom\">\n          &copy; ronasdev.com| Conçu par Robert\n        </div>\n      </div>\n\n\n    </body>\n\n</html>"
+        }
+    ]
+}

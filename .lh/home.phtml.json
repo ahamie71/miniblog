@@ -1,0 +1,122 @@
+{
+    "sourceFile": "home.phtml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 26,
+            "patches": [
+                {
+                    "date": 1677696403230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677696494930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n <h1>Bienvenue dans ce blog</h1>\n \n-\n <section class=\"articles\">\n     \n      <div class=\"article\">\n       <div class=\"left\">\n@@ -40,14 +39,7 @@\n       </div>\n     </div>\n   </section>\n   \n-  <footer>\n-    <h2>&copy; 2021, by Julie Lablonde</h2>\n-    <div class=\"social-media\">\n-      <p><i class=\"fab fa-facebook\"></i></p>\n-      <p><i class=\"fab fa-twitter\"></i></p>\n-      <p><i class=\"fab fa-instagram\"></i></p>\n-    </div>\n-  </footer>\n+  \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677696506086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,5 +41,6 @@\n   </section>\n   \n   \n </body>\n-</html>\n\\ No newline at end of file\n+</html>\n+<style\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677696545912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <h1>Bienvenue dans ce blog</h1>\n \n+\n <section class=\"articles\">\n     \n      <div class=\"article\">\n       <div class=\"left\">\n@@ -42,5 +43,29 @@\n   \n   \n </body>\n </html>\n-<style\n\\ No newline at end of file\n+<style>\n+\n+.articles{\n+  margin-top: 30px;\n+}\n+.articles .article{\n+  display: flex;\n+  flex-wrap:wrap;\n+  margin-bottom: 30px;\n+}\n+.articles .article .left img{\n+  height: 300px;\n+  width: 500px;\n+}\n+.articles .article .right {\n+  margin-left: 40px;\n+  max-width: 50%;\n+}\n+.articles .article .right p.date{\n+  color: #7f7e7e;\n+}\n+.articles .article .right p.description{\n+  color: #2d2d2d;\n+}\n+</style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677696551869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+ <\n+\n <h1>Bienvenue dans ce blog</h1>\n \n \n <section class=\"articles\">\n"
+                },
+                {
+                    "date": 1677696562174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n- <\n+ <?php include\n \n <h1>Bienvenue dans ce blog</h1>\n \n \n"
+                },
+                {
+                    "date": 1677696567478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n- <?php include\n+ <?php include 'header'\n \n <h1>Bienvenue dans ce blog</h1>\n \n \n"
+                },
+                {
+                    "date": 1677696574866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n- <?php include 'header'\n+ <?php include '../incheader.php'\n \n <h1>Bienvenue dans ce blog</h1>\n \n \n"
+                },
+                {
+                    "date": 1677696581497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n- <?php include '../incheader.php'\n+ <?php include './inc/header.php'\n \n <h1>Bienvenue dans ce blog</h1>\n \n \n"
+                },
+                {
+                    "date": 1677696639142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,8 @@\n- <?php include './inc/header.php'\n+ \n+ \n+ \n+ <?php include './inc/header.php'?>\n \n <h1>Bienvenue dans ce blog</h1>\n \n \n"
+                },
+                {
+                    "date": 1677696659706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,18 @@\n+!DOCTYPE html>\n+<html>\n+\n+<head>\n+    <meta charset=\"utf-8\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n+    <title>Untitled</title>\n+    <script type=\"text/javascript\" src=\"script.js\"></script>\n+    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css\">\n+    <link rel=\"stylesheet\" href=\"assets/css/style.css\">\n+    <link rel=\"stylesheet\" href=\"css/style.css\">\n+</head><\n  \n  \n- \n  <?php include './inc/header.php'?>\n \n <h1>Bienvenue dans ce blog</h1>\n \n"
+                },
+                {
+                    "date": 1677696678885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-!DOCTYPE html>\n+<!DOCTYPE html>\n <html>\n \n <head>\n     <meta charset=\"utf-8\">\n@@ -8,9 +8,9 @@\n     <script type=\"text/javascript\" src=\"script.js\"></script>\n     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css\">\n     <link rel=\"stylesheet\" href=\"assets/css/style.css\">\n     <link rel=\"stylesheet\" href=\"css/style.css\">\n-</head><\n+</head>\n  \n  \n  <?php include './inc/header.php'?>\n \n"
+                },
+                {
+                    "date": 1677696883255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     \n     \n     <div class=\"article\">\n       <div class=\"left\">\n-        <img src=\"https://cdn.pixabay.com/photo/2016/01/19/17/15/night-1149601_1280.jpg\" alt=\"\">\n+        <img src=\"\" alt=\"\">\n       </div>\n       <div class=\"right\">\n         <p class=\"date\">Juillet, 24, 2020</p>\n         <h1>Interview - Une ville nocture est elle si belle ?</h1>\n"
+                },
+                {
+                    "date": 1677696888530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     \n     \n     <div class=\"article\">\n       <div class=\"left\">\n-        <img src=\"\" alt=\"\">\n+        <img src=\"image/\" alt=\"\">\n       </div>\n       <div class=\"right\">\n         <p class=\"date\">Juillet, 24, 2020</p>\n         <h1>Interview - Une ville nocture est elle si belle ?</h1>\n"
+                },
+                {
+                    "date": 1677696896993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     \n     \n     <div class=\"article\">\n       <div class=\"left\">\n-        <img src=\"image/\" alt=\"\">\n+        <img src=\"image/vill\" alt=\"\">\n       </div>\n       <div class=\"right\">\n         <p class=\"date\">Juillet, 24, 2020</p>\n         <h1>Interview - Une ville nocture est elle si belle ?</h1>\n"
+                },
+                {
+                    "date": 1677696904271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     \n     \n     <div class=\"article\">\n       <div class=\"left\">\n-        <img src=\"image/vill\" alt=\"\">\n+        <img src=\"image/ville-espagne\" alt=\"\">\n       </div>\n       <div class=\"right\">\n         <p class=\"date\">Juillet, 24, 2020</p>\n         <h1>Interview - Une ville nocture est elle si belle ?</h1>\n"
+                },
+                {
+                    "date": 1677696958751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     \n     \n     <div class=\"article\">\n       <div class=\"left\">\n-        <img src=\"image/ville-espagne\" alt=\"\">\n+        <img src=\"image/ville-espagne.jpeg\" alt=\"\">\n       </div>\n       <div class=\"right\">\n         <p class=\"date\">Juillet, 24, 2020</p>\n         <h1>Interview - Une ville nocture est elle si belle ?</h1>\n@@ -83,5 +83,11 @@\n }\n .articles .article .right p.description{\n   color: #2d2d2d;\n }\n+\n+body{\n+  margin: 10px 80px;\n+  font-family: 'Noto Sans JP', sans-serif;\n+}\n+\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677696998335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n   color: #2d2d2d;\n }\n \n body{\n-  margin: 10px 80px;\n+ \n   font-family: 'Noto Sans JP', sans-serif;\n }\n \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697010407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n   color: #2d2d2d;\n }\n \n body{\n- \n+  margin: 10px 80px;\n   font-family: 'Noto Sans JP', sans-serif;\n }\n \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697019280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n   color: #2d2d2d;\n }\n \n body{\n-  margin: 10px 80px;\n+  margin: 10px 20px;\n   font-family: 'Noto Sans JP', sans-serif;\n }\n \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697024752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n   color: #2d2d2d;\n }\n \n body{\n-  margin: 10px 20px;\n+  margin: 1px 20px;\n   font-family: 'Noto Sans JP', sans-serif;\n }\n \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677697039013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n   color: #2d2d2d;\n }\n \n body{\n-  margin: 1px 20px;\n+  margin:  10px;\n   font-family: 'Noto Sans JP', sans-serif;\n }\n \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677698944372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n  \n  \n  <?php include './inc/header.php'?>\n \n-<h1>Bienvenue dans ce blog</h1>\n+<h1></h1>\n \n \n <section class=\"articles\">\n     \n"
+                },
+                {
+                    "date": 1677698949871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n  \n  \n  <?php include './inc/header.php'?>\n \n-<h1></h1>\n+<h1>B</h1>\n \n \n <section class=\"articles\">\n     \n"
+                },
+                {
+                    "date": 1677698955075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n  \n  \n  <?php include './inc/header.php'?>\n \n-<h1>B</h1>\n+<h1>BIENVENUE   <li><?php echo $_SESSION['user']['prenom'] ?></li></h1>\n \n \n <section class=\"articles\">\n     \n"
+                },
+                {
+                    "date": 1677698962413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n  \n  \n  <?php include './inc/header.php'?>\n \n-<h1>BIENVENUE   <li><?php echo $_SESSION['user']['prenom'] ?></li></h1>\n+<h1>BIENVENUE <?php echo $_SESSION['user']['prenom'] ?></h1>\n \n \n <section class=\"articles\">\n     \n"
+                },
+                {
+                    "date": 1677700139093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n  \n  \n  <?php include './inc/header.php'?>\n \n-<h1>BIENVENUE <?php echo $_SESSION['user']['prenom'] ?></h1>\n \n \n <section class=\"articles\">\n     \n"
+                }
+            ],
+            "date": 1677696403230,
+            "name": "Commit-0",
+            "content": "<h1>Bienvenue dans ce blog</h1>\n\n\n<section class=\"articles\">\n    \n     <div class=\"article\">\n      <div class=\"left\">\n        <img src=\"https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415_1280.jpg\" alt=\"\">\n      </div>\n      <div class=\"right\">\n        <p class=\"date\">Juillet, 24, 2020</p>\n        <h1>Paris - La ville des lumières, pourquoi ?</h1>\n        <p class=\"description\">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate repellendus dolor necessitatibus. Modi, quos! Explicabo voluptates vero ullam quis ipsum impedit illum numquam cum quaerat animi? Ad, fugiat neque.</p>\n        <p class=\"auteur\">Julie Lablonde</p>\n      </div>\n    </div> \n    \n    \n    <div class=\"article\">\n      <div class=\"left\">\n        <img src=\"https://cdn.pixabay.com/photo/2016/01/19/17/15/night-1149601_1280.jpg\" alt=\"\">\n      </div>\n      <div class=\"right\">\n        <p class=\"date\">Juillet, 24, 2020</p>\n        <h1>Interview - Une ville nocture est elle si belle ?</h1>\n        <p class=\"description\">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate repellendus dolor necessitatibus. Modi, quos! Explicabo voluptates vero ullam quis ipsum impedit illum numquam cum quaerat animi? Ad, fugiat neque.</p>\n        <p class=\"auteur\">Julie Lablonde</p>\n      </div>\n    </div>\n    \n    <div class=\"article\">\n      <div class=\"left\">\n        <img src=\"https://cdn.pixabay.com/photo/2017/01/09/16/15/calanque-1966920_1280.jpg\" alt=\"\">\n      </div>\n      <div class=\"right\">\n        <p class=\"date\">Juillet, 24, 2020</p>\n        <h1>Les calanques, une belle destination touristique</h1>\n        <p class=\"description\">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate repellendus dolor necessitatibus. Modi, quos! Explicabo voluptates vero ullam quis ipsum impedit illum numquam cum quaerat animi? Ad, fugiat neque.</p>\n        <p class=\"auteur\">Julie Lablonde</p>\n      </div>\n    </div>\n  </section>\n  \n  <footer>\n    <h2>&copy; 2021, by Julie Lablonde</h2>\n    <div class=\"social-media\">\n      <p><i class=\"fab fa-facebook\"></i></p>\n      <p><i class=\"fab fa-twitter\"></i></p>\n      <p><i class=\"fab fa-instagram\"></i></p>\n    </div>\n  </footer>\n</body>\n</html>"
+        }
+    ]
+}

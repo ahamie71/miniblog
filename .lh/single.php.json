@@ -1,0 +1,438 @@
+{
+    "sourceFile": "single.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 105,
+            "patches": [
+                {
+                    "date": 1677590629468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677590876560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,21 @@\n <!DOCTYPE html>\n-<html lang=\"fr\">\n+<html lang=\"en\">\n \n <head>\n   <meta charset=\"UTF-8\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n   <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n \n- \n+  <!-- Custom Styling -->\n   <link rel=\"stylesheet\" href=\"css/style.css\">\n \n-  <title>Mini-Blog</title>\n+  <title>Article </title>\n </head>\n \n <body>\n+\n+\n   <header>\n     <div class=\"logo\">\n       <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n     </div>\n@@ -28,106 +30,121 @@\n \n   <!-- Page Wrapper -->\n   <div class=\"page-container\">\n \n-    <!-- Post Slider -->\n-    <div class=\"posts\">\n-      <h1 class=\"posts-title\">Articles</h1>\n-      <div class=\"post-container\">\n-       \n-            <div class=\"post\">\n-              <img src=\"images/image1.png\" alt=\"\" class=\"slider-image\">\n-              <div class=\"post-info\">\n-                <h4><a href=\"single.html\">La vies est belle</a></h4>\n-                <i > Ronas</i>\n-                &nbsp;\n-                <i > 25 Mai 2021</i>\n-              </div>\n+    <!-- Content -->\n+    <div class=\"container\">\n+\n+      <!-- Main Content Wrapper -->\n+      <div class=\"\">\n+        <div class=\"main-content single\">\n+          <h1 class=\"post-title\">Titre de l'article</h1>\n+          <div class=\"post-image\">\n+              <img src=\"images/image1.png\" alt=\"\" >\n+          </div>\n+          <div class=\"post-content\">\n+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n+          </div>\n+        </div>\n+        <h1>Les commentaires</h1>\n+        <div class=\"comments\">\n+          \n+            <div class=\"comment\">\n+              <h3 class=\"auteur\">Ecrit par Ronasdev : </h3>\n+              <p class=\"contenu\" >J'apprecie beaucoup ta chaine.Continue à n ous faire du bien<br>\n+              <i class=\"far fa-calendar\"> depuis 16 Mai 2021</i>\n+              <a class=\"sup\" href=\"\">Supprimer</a>\n+              </p>\n+              <br>\n             </div>\n-            <div class=\"post\">\n-              <img src=\"images/image1.png\" alt=\"\" class=\"slider-image\">\n-              <div class=\"post-info\">\n-                <h4><a href=\"single.html\">La vies est belle</a></h4>\n-                <i > Ronas</i>\n-                &nbsp;\n-                <i > 25 Mai 2021</i>\n-              </div>\n-            </div>\n-            <div class=\"post\">\n-              <img src=\"images/image1.png\" alt=\"\" class=\"slider-image\">\n-              <div class=\"post-info\">\n-                <h4><a href=\"single.html\">La vies est belle</a></h4>\n-                <i > Ronas</i>\n-                &nbsp;\n-                <i > 25 Mai 2021</i>\n-              </div>\n-            </div>\n-          \n+        </div>\n+        <br>\n+        <form action=\"single.php\"  method=\"post\">\n+          <input type=\"hidden\" name=\"id\" value=\"<?php echo $id ?>\">\n+          <div>\n+            <label>Votre Prenom:</label>\n+            <input type=\"text\" name=\"author\" class=\"text-input\">\n+          </div>\n+          <div>\n+            <label>Body:</label>\n+            <textarea name=\"comment\" id=\"body\" cols=\"130\" rows=\"15\"></textarea>\n+          </div><br>\n+          <div>\n+              <button type=\"submit\" name=\"add-comment\" class=\"btn btn-big\">Commentez</button>\n+          </div>\n+        </form>\n+        \n       </div>\n     </div>\n-    \n-    <!-- footer -->\n-    <div class=\"footer\">\n-      <div class=\"footer-content\">\n-  \n-        <div class=\"footer-section about\">\n-          <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n-          <p>\n-            Ronasdev est un petit  blog conçu pour un objectif de tutoriel sur Youtube.\n-            Cependant un autre vrai blog est en cours de réalisation pour mes amis.\n-             </p>\n-          <div class=\"contact\">\n-            <span><i class=\"fas fa-phone\"></i> &nbsp; (+229) 60 93 48 17</span>\n-            <span><i class=\"fas fa-envelope\"></i> &nbsp; ronasdev@gmail.com</span>\n-          </div>\n-          <div class=\"socials\">\n-            <a href=\"#\"><i class=\"fab fa-facebook\"></i></a>\n-            <a href=\"#\"><i class=\"fab fa-instagram\"></i></a>\n-            <a href=\"#\"><i class=\"fab fa-twitter\"></i></a>\n-            <a href=\"#\"><i class=\"fab fa-youtube\"></i></a>\n-          </div>\n+  </div>\n+      <!-- // Main Content -->\n+\n+     \n+\n\\ No newline at end of file\n+  <!-- footer -->\n+  <div class=\"footer\">\n+    <div class=\"footer-content\">\n+\n+      <div class=\"footer-section about\">\n+        <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n+        <p>\n+          Ronasdev est un petit  blog conçu pour un objectif de tutoriel sur Youtube.\n+          Cependant un autre vrai blog est en cours de réalisation pour mes amis.\n+           </p>\n+        <div class=\"contact\">\n+          <span><i class=\"fas fa-phone\"></i> &nbsp; (+229) 60 93 48 17</span>\n+          <span><i class=\"fas fa-envelope\"></i> &nbsp; ronasdev@gmail.com</span>\n         </div>\n-  \n-        <div class=\"footer-section links\">\n-          <h2>Liens rapides</h2>\n-          <br>\n-          <ul>\n-            <a href=\"#\">\n-              <li>Evènements</li>\n-            </a>\n-            <a href=\"#\">\n-              <li>Equipe</li>\n-            </a>\n-            <a href=\"#\">\n-              <li>Mentoring</li>\n-            </a>\n-            <a href=\"#\">\n-              <li>Gallerie</li>\n-            </a>\n-            <a href=\"#\">\n-              <li>Termes et conditions</li>\n-            </a>\n-          </ul>\n+        <div class=\"socials\">\n+          <a href=\"#\"><i class=\"fab fa-facebook\"></i></a>\n+          <a href=\"#\"><i class=\"fab fa-instagram\"></i></a>\n+          <a href=\"#\"><i class=\"fab fa-twitter\"></i></a>\n+          <a href=\"#\"><i class=\"fab fa-youtube\"></i></a>\n         </div>\n-  \n-        <div class=\"footer-section contact-form\">\n-          <h2>Contacter nous</h2>\n-          <br>\n-          <form action=\"index.html\" method=\"post\">\n-            <input type=\"email\" name=\"email\" class=\"text-input contact-input\" placeholder=\"Votre addresse e-mail...\">\n-            <textarea rows=\"4\" name=\"message\" class=\"text-input contact-input\" placeholder=\"Votre message...\"></textarea>\n-            <button type=\"submit\" class=\"btn btn-big contact-btn\">\n-              <i class=\"fas fa-envelope\"></i>\n-             Envoyer\n-            </button>\n-          </form>\n-        </div>\n-  \n       </div>\n-  \n-      <div class=\"footer-bottom\">\n-        &copy; codingpoets.com | Designed by Awa Melvine\n+\n+      <div class=\"footer-section links\">\n+        <h2>Liens rapides</h2>\n+        <br>\n+        <ul>\n+          <a href=\"#\">\n+            <li>Evènements</li>\n+          </a>\n+          <a href=\"#\">\n+            <li>Equipe</li>\n+          </a>\n+          <a href=\"#\">\n+            <li>Mentoring</li>\n+          </a>\n+          <a href=\"#\">\n+            <li>Gallerie</li>\n+          </a>\n+          <a href=\"#\">\n+            <li>Termes et conditions</li>\n+          </a>\n+        </ul>\n       </div>\n+\n+      <div class=\"footer-section contact-form\">\n+        <h2>Contacter nous</h2>\n+        <br>\n+        <form action=\"index.html\" method=\"post\">\n+          <input type=\"email\" name=\"email\" class=\"text-input contact-input\" placeholder=\"Votre addresse e-mail...\">\n+          <textarea rows=\"4\" name=\"message\" class=\"text-input contact-input\" placeholder=\"Votre message...\"></textarea>\n+          <button type=\"submit\" class=\"btn btn-big contact-btn\">\n+            <i class=\"fas fa-envelope\"></i>\n+           Envoyer\n+          </button>\n+        </form>\n+      </div>\n+\n     </div>\n-  <!-- // footer --> \n-  <body>\n-  </html>\n+\n+    <div class=\"footer-bottom\">\n+      &copy; ronasdev.com | Conçu par Robert\n+    </div>\n+  </div>\n+  <!-- // footer -->\n+\n+</body>\n+\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677590989750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,9 @@\n           <div class=\"post-content\">\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n           </div>\n         </div>\n+        \n         <h1>Les commentaires</h1>\n         <div class=\"comments\">\n           \n             <div class=\"comment\">\n"
+                },
+                {
+                    "date": 1677590998289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,10 +44,10 @@\n           <div class=\"post-content\">\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n           </div>\n         </div>\n-        \n-        <h1>Les commentaires</h1>\n+\n+        <!-- <h1>Les commentaires</h1>\n         <div class=\"comments\">\n           \n             <div class=\"comment\">\n               <h3 class=\"auteur\">Ecrit par Ronasdev : </h3>\n@@ -142,9 +142,9 @@\n \n     <div class=\"footer-bottom\">\n       &copy; ronasdev.com | Conçu par Robert\n     </div>\n-  </div>\n+  </div> -->\n   <!-- // footer -->\n \n </body>\n \n"
+                },
+                {
+                    "date": 1677591004583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,9 @@\n       <!-- // Main Content -->\n \n      \n \n-  <!-- footer -->\n+ \n   <div class=\"footer\">\n     <div class=\"footer-content\">\n \n       <div class=\"footer-section about\">\n"
+                },
+                {
+                    "date": 1677591015183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n         \n       </div>\n     </div>\n   </div>\n-      <!-- // Main Content -->\n+      \n \n      \n \n  \n@@ -143,9 +143,9 @@\n     <div class=\"footer-bottom\">\n       &copy; ronasdev.com | Conçu par Robert\n     </div>\n   </div> -->\n-  <!-- // footer -->\n \n+\n </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677591021138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n         \n       </div>\n     </div>\n   </div>\n-      \n+      <!-- // Main Content -->\n \n      \n \n  \n@@ -143,9 +143,9 @@\n     <div class=\"footer-bottom\">\n       &copy; ronasdev.com | Conçu par Robert\n     </div>\n   </div> -->\n+  <!-- // footer -->\n \n-\n </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677591031167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,10 +44,10 @@\n           <div class=\"post-content\">\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n           </div>\n         </div>\n-\n-        <!-- <h1>Les commentaires</h1>\n+        \n+        <h1>Les commentaires</h1>\n         <div class=\"comments\">\n           \n             <div class=\"comment\">\n               <h3 class=\"auteur\">Ecrit par Ronasdev : </h3>\n@@ -80,9 +80,9 @@\n       <!-- // Main Content -->\n \n      \n \n- \n+  <!-- footer -->\n   <div class=\"footer\">\n     <div class=\"footer-content\">\n \n       <div class=\"footer-section about\">\n@@ -142,9 +142,9 @@\n \n     <div class=\"footer-bottom\">\n       &copy; ronasdev.com | Conçu par Robert\n     </div>\n-  </div> -->\n+  </div>\n   <!-- // footer -->\n \n </body>\n \n"
+                },
+                {
+                    "date": 1677591037541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,8 @@\n           <div class=\"post-content\">\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n           </div>\n         </div>\n-        \n         <h1>Les commentaires</h1>\n         <div class=\"comments\">\n           \n             <div class=\"comment\">\n"
+                },
+                {
+                    "date": 1677591054691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n           <div class=\"post-content\">\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n           </div>\n         </div>\n-        <h1>Les commentaires</h1>\n+        <!-- <h1>Les commentaires</h1>\n         <div class=\"comments\">\n           \n             <div class=\"comment\">\n               <h3 class=\"auteur\">Ecrit par Ronasdev : </h3>\n@@ -74,9 +74,9 @@\n         </form>\n         \n       </div>\n     </div>\n-  </div>\n+  </div> -->\n       <!-- // Main Content -->\n \n      \n \n"
+                },
+                {
+                    "date": 1677591342277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n-<!DOCTYPE html>\n+<\n+    !DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n   <meta charset=\"UTF-8\">\n"
+                },
+                {
+                    "date": 1677591349533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n-<\n-    !DOCTYPE html>\n+<?php \n+\n+\n+<!DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n   <meta charset=\"UTF-8\">\n"
+                },
+                {
+                    "date": 1677591356528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <?php \n \n+?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n \n"
+                },
+                {
+                    "date": 1677591374525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <?php \n-\n+ \n+ $id\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591385475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <?php \n  \n- $id\n+ $id= '';\n+ if\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591391975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php \n  \n  $id= '';\n- if\n+ if(isset)\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591406796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php \n  \n  $id= '';\n- if(isset)\n+ if(isset($_GET[]))\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591417225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php \n  \n  $id= '';\n- if(isset($_GET[]))\n+ if(isset($_GET['id'])) && \n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591422942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php \n  \n  $id= '';\n- if(isset($_GET['id'])) && \n+ if(isset($_GET['id'])) && is_nu\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591429176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php \n  \n  $id= '';\n- if(isset($_GET['id'])) && is_nu\n+ if(isset($_GET['id'])) && is_numeric($_GET)\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591437168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n <?php \n  \n  $id= '';\n- if(isset($_GET['id'])) && is_numeric($_GET)\n+ if(isset($_GET['id'])) && is_numeric($_GET['id'])){\n+    \n+ }\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591443009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <?php \n  \n  $id= '';\n- if(isset($_GET['id'])) && is_numeric($_GET['id'])){\n-    \n+ if(isset($_GET['id']) && is_numeric($_GET['id']){\n+\n  }\n ?>\n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677591454020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <?php \n  \n  $id= '';\n  if(isset($_GET['id']) && is_numeric($_GET['id']){\n+    $id\n \n  }\n ?>\n \n"
+                },
+                {
+                    "date": 1677591464041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <?php \n  \n  $id= '';\n- if(isset($_GET['id']) && is_numeric($_GET['id']){\n-    $id\n+ if(isset($_GET['id']) && is_numeric($_GET['id'])){\n+    $id = $_GET['id'];\n \n  }\n ?>\n \n"
+                },
+                {
+                    "date": 1677591494794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n  if(isset($_GET['id']) && is_numeric($_GET['id'])){\n     $id = $_GET['id'];\n \n  }\n+ if\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591501296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n  if(isset($_GET['id']) && is_numeric($_GET['id'])){\n     $id = $_GET['id'];\n \n  }\n- if\n+ if(empty($_GET))\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591508644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n  if(isset($_GET['id']) && is_numeric($_GET['id'])){\n     $id = $_GET['id'];\n \n  }\n- if(empty($_GET))\n+ if(empty($_GET['id'])){\n+    die()\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591526429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     $id = $_GET['id'];\n \n  }\n  if(empty($_GET['id'])){\n-    die()\n+    die('cet arti'\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591546442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     $id = $_GET['id'];\n \n  }\n  if(empty($_GET['id'])){\n-    die('cet arti'\n+    die(' cet art\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591559592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     $id = $_GET['id'];\n \n  }\n  if(empty($_GET['id'])){\n-    die(' cet art\n+    die(' cet article n'existe pas ''\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591566613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     $id = $_GET['id'];\n \n  }\n  if(empty($_GET['id'])){\n-    die(' cet article n'existe pas ''\n+    die(\"cet article n'existe pas ')\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591600671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     $id = $_GET['id'];\n \n  }\n  if(empty($_GET['id'])){\n-    die(\"cet article n'existe pas ')\n+    die(\"cet article n'existe pas \");\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591607832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     $id = $_GET['id'];\n \n  }\n  if(empty($_GET['id'])){\n-    die(\"cet article n'existe pas \");\n+    die(\"cet article n''existe pas \");\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591616303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,11 @@\n  \n  $id= '';\n  if(isset($_GET['id']) && is_numeric($_GET['id'])){\n     $id = $_GET['id'];\n-\n  }\n  if(empty($_GET['id'])){\n-    die(\"cet article n''existe pas \");\n+    die(\"cet article nexiste pas \");\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591629133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,5 +156,4 @@\n   <!-- // footer -->\n \n </body>\n \n-</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677591665157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n     $id = $_GET['id'];\n  }\n  if(empty($_GET['id'])){\n     die(\"cet article nexiste pas \");\n+ }\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n@@ -156,4 +157,5 @@\n   <!-- // footer -->\n \n </body>\n \n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677591780787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,10 @@\n     die(\"cet article nexiste pas \");\n  }\n ?>\n \n+\n+\n <!DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n"
+                },
+                {
+                    "date": 1677591793617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,12 +6,20 @@\n  }\n  if(empty($_GET['id'])){\n     die(\"cet article nexiste pas \");\n  }\n-?>\n \n+$host = 'localhost';\n+$user = 'root';\n+$pass = 'root';\n+$dbname = 'mBlog';\n \n+$pdo = new PDO('mysql:host=' . $host . ';dbname=' . $dbname . ';charset=utf8', $user, $pass, [\n+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n+]);\n \n+\n <!DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n"
+                },
+                {
+                    "date": 1677591833250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,10 @@\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n \n+?>\n+\n <!DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n"
+                },
+                {
+                    "date": 1677591840934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n-\n+$query= $\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591850916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n-$query= $\n+$query= $pdo->prepare\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591874548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n-$query= $pdo->prepare\n+$query= $pdo->prepare('')\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591882421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n-$query= $pdo->prepare('')\n+$query= $pdo->prepare('SELECT * FROM posts WHERE id')\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591889862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n-$query= $pdo->prepare('SELECT * FROM posts WHERE id')\n+$query= $pdo->prepare('SELECT * FROM posts WHERE id= :post_id');\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591914908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id= :post_id');\n+\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591921188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id= :post_id');\n-\n+$query->execute();\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591929213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id= :post_id');\n-$query->execute();\n+$query->execute(array());\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591935361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id= :post_id');\n-$query->execute(array());\n+$query->execute(array($post_id= ));\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591943492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id= :post_id');\n-$query->execute(array($post_id= ));\n+$query->execute(array($post_id=>$id\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591950543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,10 @@\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id= :post_id');\n-$query->execute(array($post_id=>$id\n+$query->execute(array($post_id=>$id));\n+\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591955623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n ]);\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id= :post_id');\n $query->execute(array($post_id=>$id));\n-\n+$post = \n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677591964399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n ]);\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id= :post_id');\n $query->execute(array($post_id=>$id));\n-$post = \n+$post = $query->fetch();\n ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677592030854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n \n       <!-- Main Content Wrapper -->\n       <div class=\"\">\n         <div class=\"main-content single\">\n-          <h1 class=\"post-title\">Titre de l'article</h1>\n+          <h1 class=\"post-title\"></h1>\n           <div class=\"post-image\">\n               <img src=\"images/image1.png\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n"
+                },
+                {
+                    "date": 1677592040788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n \n       <!-- Main Content Wrapper -->\n       <div class=\"\">\n         <div class=\"main-content single\">\n-          <h1 class=\"post-title\"></h1>\n+          <h1 class=\"post-title\"><?</h1>\n           <div class=\"post-image\">\n               <img src=\"images/image1.png\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n"
+                },
+                {
+                    "date": 1677592046262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n \n       <!-- Main Content Wrapper -->\n       <div class=\"\">\n         <div class=\"main-content single\">\n-          <h1 class=\"post-title\"><?</h1>\n+          <h1 class=\"post-title\"><?php ec</h1>\n           <div class=\"post-image\">\n               <img src=\"images/image1.png\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n"
+                },
+                {
+                    "date": 1677592054138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n \n       <!-- Main Content Wrapper -->\n       <div class=\"\">\n         <div class=\"main-content single\">\n-          <h1 class=\"post-title\"><?php ec</h1>\n+          <h1 class=\"post-title\"><?php echo $post</h1>\n           <div class=\"post-image\">\n               <img src=\"images/image1.png\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n"
+                },
+                {
+                    "date": 1677592061053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n \n       <!-- Main Content Wrapper -->\n       <div class=\"\">\n         <div class=\"main-content single\">\n-          <h1 class=\"post-title\"><?php echo $post</h1>\n+          <h1 class=\"post-title\"><?php echo $post['title'</h1>\n           <div class=\"post-image\">\n               <img src=\"images/image1.png\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n"
+                },
+                {
+                    "date": 1677592068158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n \n       <!-- Main Content Wrapper -->\n       <div class=\"\">\n         <div class=\"main-content single\">\n-          <h1 class=\"post-title\"><?php echo $post['title'</h1>\n+          <h1 class=\"post-title\"><?php echo $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/image1.png\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n"
+                },
+                {
+                    "date": 1677592085839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n \n       <!-- Main Content Wrapper -->\n       <div class=\"\">\n         <div class=\"main-content single\">\n-          <h1 class=\"post-title\"><?php echo $post['title']?></h1>\n+          <h1 class=\"post-title\"><?=  $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/image1.png\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n"
+                },
+                {
+                    "date": 1677592110669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,13 +61,14 @@\n \n       <!-- Main Content Wrapper -->\n       <div class=\"\">\n         <div class=\"main-content single\">\n-          <h1 class=\"post-title\"><?=  $post['title']?></h1>\n+          <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/image1.png\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n+            \n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n           </div>\n         </div>\n         <!-- <h1>Les commentaires</h1>\n"
+                },
+                {
+                    "date": 1677592118919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n           <div class=\"post-image\">\n               <img src=\"images/image1.png\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n-            \n+            <? =$post\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n           </div>\n         </div>\n         <!-- <h1>Les commentaires</h1>\n"
+                },
+                {
+                    "date": 1677592124805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n           <div class=\"post-image\">\n               <img src=\"images/image1.png\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n-            <? =$post\n+            <? = $post['content']?>\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n           </div>\n         </div>\n         <!-- <h1>Les commentaires</h1>\n"
+                },
+                {
+                    "date": 1677592144492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,12 +63,12 @@\n       <div class=\"\">\n         <div class=\"main-content single\">\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n-              <img src=\"images/image1.png\" alt=\"\" >\n+              <img src=\"images/<?=$\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n-            <? = $post['content']?>\n+            <?= $post['content']?>\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n           </div>\n         </div>\n         <!-- <h1>Les commentaires</h1>\n"
+                },
+                {
+                    "date": 1677592150918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n       <div class=\"\">\n         <div class=\"main-content single\">\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n-              <img src=\"images/<?=$\" alt=\"\" >\n+              <img src=\"images/<?=$post[image\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n"
+                },
+                {
+                    "date": 1677592161966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n       <div class=\"\">\n         <div class=\"main-content single\">\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n-              <img src=\"images/<?=$post[image\" alt=\"\" >\n+              <img src=\"images/<?=$post['image\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n"
+                },
+                {
+                    "date": 1677592167892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n       <div class=\"\">\n         <div class=\"main-content single\">\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n-              <img src=\"images/<?=$post['image\" alt=\"\" >\n+              <img src=\"images/<?=$post['image']\" alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n"
+                },
+                {
+                    "date": 1677592174950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n       <div class=\"\">\n         <div class=\"main-content single\">\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n-              <img src=\"images/<?=$post['image']\" alt=\"\" >\n+              <img src=\"images/<?=$post['image']\"; alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n"
+                },
+                {
+                    "date": 1677592180629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n       <div class=\"\">\n         <div class=\"main-content single\">\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n-              <img src=\"images/<?=$post['image']\"; alt=\"\" >\n+              <img src=\"images/<?=$post['image']; ?>alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n"
+                },
+                {
+                    "date": 1677592298606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n-$query= $pdo->prepare('SELECT * FROM posts WHERE id= :post_id');\n+$query= $pdo->prepare('SELECT * FROM posts WHERE id = :post_id');\n $query->execute(array($post_id=>$id));\n $post = $query->fetch();\n ?>\n \n@@ -63,9 +63,9 @@\n       <div class=\"\">\n         <div class=\"main-content single\">\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n-              <img src=\"images/<?=$post['image']; ?>alt=\"\" >\n+              <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n"
+                },
+                {
+                    "date": 1677592326998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n-$query= $pdo->prepare('SELECT * FROM posts WHERE id = :post_id');\n+$query= $pdo->prepare('SELECT * FROM posts WHERE id = :id');\n $query->execute(array($post_id=>$id));\n $post = $query->fetch();\n ?>\n \n"
+                },
+                {
+                    "date": 1677592335917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id = :id');\n-$query->execute(array($post_id=>$id));\n+$query->execute(array($id=>$id));\n $post = $query->fetch();\n ?>\n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677592349043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n-$query= $pdo->prepare('SELECT * FROM posts WHERE id = :id');\n-$query->execute(array($id=>$id));\n+$query= $pdo->prepare('SELECT * FROM posts WHERE id = :post_id');\n+$query->execute(array($post_id=>$id));\n $post = $query->fetch();\n ?>\n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677592355315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id = :post_id');\n-$query->execute(array($post_id=>$id));\n+$query->execute(array($post_id =>$id));\n $post = $query->fetch();\n ?>\n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677592481264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n ]);\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id = :post_id');\n-$query->execute(array($post_id =>$id));\n+$query->execute(array('post_id' => $id));\n $post = $query->fetch();\n ?>\n \n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1677592664225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n-           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam illum, modi vero tempore enim fugit facere voluptate cumque distinctio voluptatibus voluptates provident fugiat laboriosam, quis sequi cum quisquam dolore facilis, deleniti dolores. Non, dolor autem. Eius laudantium tempora quam doloremque corporis consequatur. Repellat reprehenderit est ducimus illo vero minima labore quasi aut modi fugit culpa veniam saepe aperiam fugiat tempora soluta nemo voluptas, dicta ut at corporis! Repellendus laudantium inventore, quam temporibus asperiores, iste repudiandae obcaecati earum quaerat autem suscipit, numquam quisquam ipsam? Atque inventore nostrum consequatur minus laudantium, expedita maiores, voluptas fuga quos doloremque ut sapiente voluptate? Voluptatum, doloribus.\n+           \n           </div>\n         </div>\n         <!-- <h1>Les commentaires</h1>\n         <div class=\"comments\">\n"
+                },
+                {
+                    "date": 1677592669569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,8 @@\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n-           \n           </div>\n         </div>\n         <!-- <h1>Les commentaires</h1>\n         <div class=\"comments\">\n"
+                },
+                {
+                    "date": 1677592677275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,8 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n+          <\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592683111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <\n+          <small></small>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592702466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <small></small>\n+          <small><?= $</small>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592707823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <small><?= $</small>\n+          <small><?= $post['author</small>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592713019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <small><?= $post['author</small>\n+          <small><?= $post['author']['</small>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592719673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <small><?= $post['author']['</small>\n+          <small><?= $post['author'];</small>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592725754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <small><?= $post['author'];</small>\n+          <small><?= $post['author']; ?></small>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592734574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <small><?= $post['author']; ?></small>\n+          <strong><?= $post['author']; ?>: publui</small>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592741597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <strong><?= $post['author']; ?>: publui</small>\n+          <strong><?= $post['author']; ?>: publi</strong>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592747297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <strong><?= $post['author']; ?>: publi</strong>\n+          <strong><?= $post['author']; ?>: publié le <?= </strong>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592752935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <strong><?= $post['author']; ?>: publié le <?= </strong>\n+          <strong><?= $post['author']; ?>: publié le <?= $post[</strong>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592761010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <strong><?= $post['author']; ?>: publié le <?= $post[</strong>\n+          <strong><?= $post['author']; ?>: publié le <?= $post['created</strong>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592766811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <strong><?= $post['author']; ?>: publié le <?= $post['created</strong>\n+          <strong><?= $post['author']; ?>: publié le <?= $post['created_at']</strong>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592772951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <strong><?= $post['author']; ?>: publié le <?= $post['created_at']</strong>\n+          <strong><?= $post['author']; ?>: publié le <?= $post['created_at']?></strong>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1677592809479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,9 +168,9 @@\n     <div class=\"footer-bottom\">\n       &copy; ronasdev.com | Conçu par Robert\n     </div>\n   </div>\n-  <!-- // footer -->\n+  // footer\n \n </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677592891842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <strong><?= $post['author']; ?>: publié le <?= $post['created_at']?></strong>\n+       \n           <div class=\"post-content\">\n             <?= $post['content']?>\n           </div>\n         </div>\n@@ -106,9 +106,9 @@\n \n      \n \n   <!-- footer -->\n-  <div class=\"footer\">\n+  <!-- <div class=\"footer\">\n     <div class=\"footer-content\">\n \n       <div class=\"footer-section about\">\n         <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n@@ -168,9 +168,9 @@\n     <div class=\"footer-bottom\">\n       &copy; ronasdev.com | Conçu par Robert\n     </div>\n   </div>\n-  // footer\n+  // footer -->\n \n </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677592920881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,8 +68,9 @@\n           </div>\n        \n           <div class=\"post-content\">\n             <?= $post['content']?>\n+            \n           </div>\n         </div>\n         <!-- <h1>Les commentaires</h1>\n         <div class=\"comments\">\n"
+                },
+                {
+                    "date": 1677592927656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,12 +65,11 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-       \n+          <strong><?= $post['author']; ?>: publié le <?= $post['created_at']?></strong>\n           <div class=\"post-content\">\n             <?= $post['content']?>\n-            \n           </div>\n         </div>\n         <!-- <h1>Les commentaires</h1>\n         <div class=\"comments\">\n"
+                },
+                {
+                    "date": 1677592935300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,11 +65,12 @@\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n           </div>\n-          <strong><?= $post['author']; ?>: publié le <?= $post['created_at']?></strong>\n+       \n           <div class=\"post-content\">\n             <?= $post['content']?>\n+            <strong><?= $post['author']; ?>: publié le <?= $post['created_at']?></strong>\n           </div>\n         </div>\n         <!-- <h1>Les commentaires</h1>\n         <div class=\"comments\">\n"
+                },
+                {
+                    "date": 1677592942026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n         <div class=\"main-content single\">\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n-          </div>\n+          </div><br>\n        \n           <div class=\"post-content\">\n             <?= $post['content']?>\n             <strong><?= $post['author']; ?>: publié le <?= $post['created_at']?></strong>\n"
+                },
+                {
+                    "date": 1677593056943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n         <div class=\"main-content single\">\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n-          </div><br>\n+          </div></br>\n        \n           <div class=\"post-content\">\n             <?= $post['content']?>\n             <strong><?= $post['author']; ?>: publié le <?= $post['created_at']?></strong>\n"
+                },
+                {
+                    "date": 1677593064822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,10 @@\n         <div class=\"main-content single\">\n           <h1 class=\"post-title\"><?= $post['title']?></h1>\n           <div class=\"post-image\">\n               <img src=\"images/<?=$post['image']; ?>\"alt=\"\" >\n-          </div></br>\n+          </div>\n+        </br>\n        \n           <div class=\"post-content\">\n             <?= $post['content']?>\n             <strong><?= $post['author']; ?>: publié le <?= $post['created_at']?></strong>\n"
+                },
+                {
+                    "date": 1677593389885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     <div class=\"logo\">\n       <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n     </div>\n     <ul class=\"nav\">\n-      <li><a href=\"index.html\">Accueil</a></li>\n+      <li><a href=\"index.ph\">Accueil</a></li>\n       <li><a href=\"#\">A propos</a></li>\n       <li><a href=\"#\">Services</a></li>\n       <li><a href=\"#\">S'inscrire</a></li>\n       <li><a href=\"#\">Se connecter</a></li> \n"
+                },
+                {
+                    "date": 1677593428783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     <div class=\"logo\">\n       <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n     </div>\n     <ul class=\"nav\">\n-      <li><a href=\"index.ph\">Accueil</a></li>\n+      <li><a href=\"index.html\">Accueil</a></li>\n       <li><a href=\"#\">A propos</a></li>\n       <li><a href=\"#\">Services</a></li>\n       <li><a href=\"#\">S'inscrire</a></li>\n       <li><a href=\"#\">Se connecter</a></li> \n"
+                },
+                {
+                    "date": 1677593475067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     <div class=\"logo\">\n       <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n     </div>\n     <ul class=\"nav\">\n-      <li><a href=\"index.html\">Accueil</a></li>\n+      <li><a href=\"index.php\">Accueil</a></li>\n       <li><a href=\"#\">A propos</a></li>\n       <li><a href=\"#\">Services</a></li>\n       <li><a href=\"#\">S'inscrire</a></li>\n       <li><a href=\"#\">Se connecter</a></li> \n"
+                },
+                {
+                    "date": 1677593491440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     <div class=\"logo\">\n       <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n     </div>\n     <ul class=\"nav\">\n-      <li><a href=\"index.php\">Accueil</a></li>\n+      <li><a href=\"index.html\">Accueil</a></li>\n       <li><a href=\"#\">A propos</a></li>\n       <li><a href=\"#\">Services</a></li>\n       <li><a href=\"#\">S'inscrire</a></li>\n       <li><a href=\"#\">Se connecter</a></li> \n"
+                },
+                {
+                    "date": 1677593518700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     <div class=\"logo\">\n       <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n     </div>\n     <ul class=\"nav\">\n-      <li><a href=\"index.html\">Accueil</a></li>\n+      <li><a href=\"index.php\">Accueil</a></li>\n       <li><a href=\"#\">A propos</a></li>\n       <li><a href=\"#\">Services</a></li>\n       <li><a href=\"#\">S'inscrire</a></li>\n       <li><a href=\"#\">Se connecter</a></li> \n"
+                },
+                {
+                    "date": 1677593802006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,17 +7,9 @@\n  if(empty($_GET['id'])){\n     die(\"cet article nexiste pas \");\n  }\n \n-$host = 'localhost';\n-$user = 'root';\n-$pass = 'root';\n-$dbname = 'mBlog';\n \n-$pdo = new PDO('mysql:host=' . $host . ';dbname=' . $dbname . ';charset=utf8', $user, $pass, [\n-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n-]);\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id = :post_id');\n $query->execute(array('post_id' => $id));\n $post = $query->fetch();\n"
+                },
+                {
+                    "date": 1677593807915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n  if(empty($_GET['id'])){\n     die(\"cet article nexiste pas \");\n  }\n \n+require_once\n \n-\n $query= $pdo->prepare('SELECT * FROM posts WHERE id = :post_id');\n $query->execute(array('post_id' => $id));\n $post = $query->fetch();\n ?>\n"
+                },
+                {
+                    "date": 1677593816773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n  if(empty($_GET['id'])){\n     die(\"cet article nexiste pas \");\n  }\n \n-require_once \"db.php\"\n+require_once \"db.php\";\n \n $query= $pdo->prepare('SELECT * FROM posts WHERE id = :post_id');\n $query->execute(array('post_id' => $id));\n $post = $query->fetch();\n"
+                }
+            ],
+            "date": 1677590629468,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n\n \n  <link rel=\"stylesheet\" href=\"css/style.css\">\n\n  <title>Mini-Blog</title>\n</head>\n\n<body>\n  <header>\n    <div class=\"logo\">\n      <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n    </div>\n    <ul class=\"nav\">\n      <li><a href=\"index.html\">Accueil</a></li>\n      <li><a href=\"#\">A propos</a></li>\n      <li><a href=\"#\">Services</a></li>\n      <li><a href=\"#\">S'inscrire</a></li>\n      <li><a href=\"#\">Se connecter</a></li> \n    </ul>\n  </header>\n\n  <!-- Page Wrapper -->\n  <div class=\"page-container\">\n\n    <!-- Post Slider -->\n    <div class=\"posts\">\n      <h1 class=\"posts-title\">Articles</h1>\n      <div class=\"post-container\">\n       \n            <div class=\"post\">\n              <img src=\"images/image1.png\" alt=\"\" class=\"slider-image\">\n              <div class=\"post-info\">\n                <h4><a href=\"single.html\">La vies est belle</a></h4>\n                <i > Ronas</i>\n                &nbsp;\n                <i > 25 Mai 2021</i>\n              </div>\n            </div>\n            <div class=\"post\">\n              <img src=\"images/image1.png\" alt=\"\" class=\"slider-image\">\n              <div class=\"post-info\">\n                <h4><a href=\"single.html\">La vies est belle</a></h4>\n                <i > Ronas</i>\n                &nbsp;\n                <i > 25 Mai 2021</i>\n              </div>\n            </div>\n            <div class=\"post\">\n              <img src=\"images/image1.png\" alt=\"\" class=\"slider-image\">\n              <div class=\"post-info\">\n                <h4><a href=\"single.html\">La vies est belle</a></h4>\n                <i > Ronas</i>\n                &nbsp;\n                <i > 25 Mai 2021</i>\n              </div>\n            </div>\n          \n      </div>\n    </div>\n    \n    <!-- footer -->\n    <div class=\"footer\">\n      <div class=\"footer-content\">\n  \n        <div class=\"footer-section about\">\n          <h1 class=\"logo-text\"><span>Ron</span>asdev</h1>\n          <p>\n            Ronasdev est un petit  blog conçu pour un objectif de tutoriel sur Youtube.\n            Cependant un autre vrai blog est en cours de réalisation pour mes amis.\n             </p>\n          <div class=\"contact\">\n            <span><i class=\"fas fa-phone\"></i> &nbsp; (+229) 60 93 48 17</span>\n            <span><i class=\"fas fa-envelope\"></i> &nbsp; ronasdev@gmail.com</span>\n          </div>\n          <div class=\"socials\">\n            <a href=\"#\"><i class=\"fab fa-facebook\"></i></a>\n            <a href=\"#\"><i class=\"fab fa-instagram\"></i></a>\n            <a href=\"#\"><i class=\"fab fa-twitter\"></i></a>\n            <a href=\"#\"><i class=\"fab fa-youtube\"></i></a>\n          </div>\n        </div>\n  \n        <div class=\"footer-section links\">\n          <h2>Liens rapides</h2>\n          <br>\n          <ul>\n            <a href=\"#\">\n              <li>Evènements</li>\n            </a>\n            <a href=\"#\">\n              <li>Equipe</li>\n            </a>\n            <a href=\"#\">\n              <li>Mentoring</li>\n            </a>\n            <a href=\"#\">\n              <li>Gallerie</li>\n            </a>\n            <a href=\"#\">\n              <li>Termes et conditions</li>\n            </a>\n          </ul>\n        </div>\n  \n        <div class=\"footer-section contact-form\">\n          <h2>Contacter nous</h2>\n          <br>\n          <form action=\"index.html\" method=\"post\">\n            <input type=\"email\" name=\"email\" class=\"text-input contact-input\" placeholder=\"Votre addresse e-mail...\">\n            <textarea rows=\"4\" name=\"message\" class=\"text-input contact-input\" placeholder=\"Votre message...\"></textarea>\n            <button type=\"submit\" class=\"btn btn-big contact-btn\">\n              <i class=\"fas fa-envelope\"></i>\n             Envoyer\n            </button>\n          </form>\n        </div>\n  \n      </div>\n  \n      <div class=\"footer-bottom\">\n        &copy; codingpoets.com | Designed by Awa Melvine\n      </div>\n    </div>\n  <!-- // footer --> \n  <body>\n  </html>"
+        }
+    ]
+}

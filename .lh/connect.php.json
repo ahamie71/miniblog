@@ -1,0 +1,110 @@
+{
+    "sourceFile": "connect.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 23,
+            "patches": [
+                {
+                    "date": 1677683944964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677685936019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n </head>\n \n <body>\n \n-  <form action=\"index.php?action=Connect\" method=\"POST\">\n+  <form action=\"index.php\" method=\"POST\">\n     <section class=\"vh-100\" style=\"background-color:white;\">\n       <div class=\"container py-4 h-100\">\n         <div class=\"row d-flex justify-content-center align-items-center h-80\">\n           <div class=\"col-12 col-md-8 col-lg-6 col-xl-5\">\n"
+                },
+                {
+                    "date": 1677685944726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   <title>login form</title>\n </head>\n \n <body>\n-\n+<?php include './inc/header.php'; ?>\n   <form action=\"index.php\" method=\"POST\">\n     <section class=\"vh-100\" style=\"background-color:white;\">\n       <div class=\"container py-4 h-100\">\n         <div class=\"row d-flex justify-content-center align-items-center h-80\">\n"
+                },
+                {
+                    "date": 1677685978224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n   <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\"\n     integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\">\n+    <link rel=\"stylesheet\" href=\"css/style.css\">\n   <title>login form</title>\n </head>\n \n <body>\n"
+                },
+                {
+                    "date": 1677694923126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n+\n+\n+\n <!DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n"
+                },
+                {
+                    "date": 1677694928426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n+  <\n \n \n-\n <!DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n"
+                },
+                {
+                    "date": 1677694934120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-  <\n+  <?php \n \n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677694944583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n   <?php \n+  require_once 'refactoring.php';\n \n-\n <!DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n"
+                },
+                {
+                    "date": 1677694952957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,11 @@\n   <?php \n-  require_once 'refactoring.php';\n+  require_once 'refactoring.php';?>\n \n+  <?php \n+\n+  \n+\n <!DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n"
+                },
+                {
+                    "date": 1677694958016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,14 @@\n   require_once 'refactoring.php';?>\n \n   <?php \n \n-  \n \n+\n+\n+\n+  ?>\n+\n <!DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n"
+                },
+                {
+                    "date": 1677694970549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,8 @@\n   <?php \n \n \n \n-\n-\n   ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677695010667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,27 @@\n   require_once 'refactoring.php';?>\n \n   <?php \n \n+if (isset($_POST['name']) && isset($_POST['password'])) {\n+    $name = $_POST['name'];\n+    $password = $_POST['password'];\n+    require_once(dirname(__FILE__, 3) . '/Model/user.php');\n+    $user = getUserByName($name);\n \n+    if (password_verify($password, $user['password'])) {\n+        $_SESSION['user'] = $user;\n+        header(\"location:index.php?action=Discuss\");\n+        exit();\n \n+    } else {\n+        echo \" password incorrecte\";\n+    }\n+} else {\n+    require_once(dirname(__FILE__, 3) . '/templates/login.phtml');\n+\n+}\n+\n   ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677695018588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n if (isset($_POST['name']) && isset($_POST['password'])) {\n     $name = $_POST['name'];\n     $password = $_POST['password'];\n     require_once(dirname(__FILE__, 3) . '/Model/user.php');\n-    $user = getUserByName($name);\n+    $user = getUserByName($n);\n \n     if (password_verify($password, $user['password'])) {\n         $_SESSION['user'] = $user;\n         header(\"location:index.php?action=Discuss\");\n"
+                },
+                {
+                    "date": 1677695055473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n \n if (isset($_POST['name']) && isset($_POST['password'])) {\n     $name = $_POST['name'];\n     $password = $_POST['password'];\n-    require_once(dirname(__FILE__, 3) . '/Model/user.php');\n-    $user = getUserByName($n);\n+   \n+    $user = getUserByName($prenom);\n \n     if (password_verify($password, $user['password'])) {\n         $_SESSION['user'] = $user;\n         header(\"location:index.php?action=Discuss\");\n"
+                },
+                {
+                    "date": 1677695064617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,14 @@\n+  \n+  $\n   <?php \n   require_once 'refactoring.php';?>\n \n   <?php \n \n if (isset($_POST['name']) && isset($_POST['password'])) {\n     $name = $_POST['name'];\n     $password = $_POST['password'];\n-   \n     $user = getUserByName($prenom);\n \n     if (password_verify($password, $user['password'])) {\n         $_SESSION['user'] = $user;\n"
+                },
+                {
+                    "date": 1677695070519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n   \n-  $\n+\n+\n   <?php \n   require_once 'refactoring.php';?>\n \n   <?php \n"
+                },
+                {
+                    "date": 1677695078900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n   \n \n \n   <?php \n+  session_start();\n   require_once 'refactoring.php';?>\n \n   <?php \n \n"
+                },
+                {
+                    "date": 1677695091758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n             <div class=\"card shadow-2-strong\" style=\"border-radius: 1rem;\">\n               <div class=\"card-body p-5 text-center\">\n                 <h3 class=\"mb-5\">Sign in</h3>\n                 <div class=\"form-outline mb-4\">\n-                  <input type=\"name\" required=\"required\" id=\"name\" class=\"form-control form-control-lg\" name=\"name\"\n+                  <input type=\"name\" required=\"required\" id=\"name\" class=\"form-control form-control-lg\" name=\"prenom\"\n                     placeholder=\"enter your name\" />\n                   <label class=\"form-label\" for=\"typeEmailX-2\"></label>\n                 </div>\n                 <div class=\"form-outline mb-4\">\n"
+                },
+                {
+                    "date": 1677695096882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   require_once 'refactoring.php';?>\n \n   <?php \n \n-if (isset($_POST['name']) && isset($_POST['password'])) {\n+if (isset($_POST['prenom']) && isset($_POST['password'])) {\n     $name = $_POST['name'];\n     $password = $_POST['password'];\n     $user = getUserByName($prenom);\n \n"
+                },
+                {
+                    "date": 1677695104459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n   <?php \n \n if (isset($_POST['prenom']) && isset($_POST['password'])) {\n-    $name = $_POST['name'];\n+    $prenom = $_POST['prenom'];\n     $password = $_POST['password'];\n     $user = getUserByName($prenom);\n \n     if (password_verify($password, $user['password'])) {\n"
+                },
+                {
+                    "date": 1677695116396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     $user = getUserByName($prenom);\n \n     if (password_verify($password, $user['password'])) {\n         $_SESSION['user'] = $user;\n-        header(\"location:index.php?action=Discuss\");\n+        header(\"location:index.php);\n         exit();\n \n     } else {\n         echo \" password incorrecte\";\n"
+                },
+                {
+                    "date": 1677695127085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     $user = getUserByName($prenom);\n \n     if (password_verify($password, $user['password'])) {\n         $_SESSION['user'] = $user;\n-        header(\"location:index.php);\n+        header(\"location:index.php\");\n         exit();\n \n     } else {\n         echo \" password incorrecte\";\n"
+                },
+                {
+                    "date": 1677695133224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,16 +16,10 @@\n         $_SESSION['user'] = $user;\n         header(\"location:index.php\");\n         exit();\n \n-    } else {\n-        echo \" password incorrecte\";\n-    }\n-} else {\n-    require_once(dirname(__FILE__, 3) . '/templates/login.phtml');\n+    \n \n-}\n-\n   ?>\n \n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1677695150007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n         header(\"location:index.php\");\n         exit();\n \n     }\n+    \n \n   ?>\n \n <!DOCTYPE html>\n"
+                }
+            ],
+            "date": 1677683944964,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"UTF-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\"\n    integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\">\n  <title>login form</title>\n</head>\n\n<body>\n\n  <form action=\"index.php?action=Connect\" method=\"POST\">\n    <section class=\"vh-100\" style=\"background-color:white;\">\n      <div class=\"container py-4 h-100\">\n        <div class=\"row d-flex justify-content-center align-items-center h-80\">\n          <div class=\"col-12 col-md-8 col-lg-6 col-xl-5\">\n            <div class=\"card shadow-2-strong\" style=\"border-radius: 1rem;\">\n              <div class=\"card-body p-5 text-center\">\n                <h3 class=\"mb-5\">Sign in</h3>\n                <div class=\"form-outline mb-4\">\n                  <input type=\"name\" required=\"required\" id=\"name\" class=\"form-control form-control-lg\" name=\"name\"\n                    placeholder=\"enter your name\" />\n                  <label class=\"form-label\" for=\"typeEmailX-2\"></label>\n                </div>\n                <div class=\"form-outline mb-4\">\n                  <input type=\"password\" id=\"typePasswordX-2\" class=\"form-control form-control-lg\" name=\"password\"\n                    placeholder=\"enter your password\" />\n                  <label class=\"form-label\" for=\"typePasswordX-2\"></label>\n                </div>\n                <button class=\"btn btn-primary btn-lg btn-block\" type=\"submit\" name=\"valider\">Login</button>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n  </form>\n</body>\n\n</html>"
+        }
+    ]
+}

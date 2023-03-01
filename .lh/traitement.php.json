@@ -1,0 +1,190 @@
+{
+    "sourceFile": "traitement.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 43,
+            "patches": [
+                {
+                    "date": 1677596995229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677597993027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n-\n+//traitement d\n $id= '';\n if(isset($_GET['id']) && is_numeric($_GET['id'])){\n    $id = $_GET['id'];\n }\n"
+                },
+                {
+                    "date": 1677676638090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n <?php\n-//traitement d\n+//traitement de single php \n $id= '';\n if(isset($_GET['id']) && is_numeric($_GET['id'])){\n    $id = $_GET['id'];\n }\n if(empty($_GET['id'])){\n    die(\"cet article nexiste pas \");\n }\n+\n"
+                },
+                {
+                    "date": 1677676646772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,4 +7,5 @@\n if(empty($_GET['id'])){\n    die(\"cet article nexiste pas \");\n }\n \n+// sauve\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676657360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,5 @@\n if(empty($_GET['id'])){\n    die(\"cet article nexiste pas \");\n }\n \n-// sauve\n\\ No newline at end of file\n+// sauvegarde d'un commentaire\n"
+                },
+                {
+                    "date": 1677676663346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,4 +8,6 @@\n    die(\"cet article nexiste pas \");\n }\n \n // sauvegarde d'un commentaire\n+\n+if(isset())\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676669309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,5 @@\n }\n \n // sauvegarde d'un commentaire\n \n-if(isset())\n\\ No newline at end of file\n+if(isset($_POST))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676676940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,5 @@\n }\n \n // sauvegarde d'un commentaire\n \n-if(isset($_POST))\n\\ No newline at end of file\n+if(isset($_POST['add-']))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676682614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,8 @@\n }\n \n // sauvegarde d'un commentaire\n \n-if(isset($_POST['add-']))\n\\ No newline at end of file\n+if(isset($_POST['add-comment'])){\n+\n+   \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676696111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n // sauvegarde d'un commentaire\n \n if(isset($_POST['add-comment'])){\n \n-   \n+   if(isset(['comment\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676703087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n // sauvegarde d'un commentaire\n \n if(isset($_POST['add-comment'])){\n \n-   if(isset(['comment\n+   if(\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676713025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n // sauvegarde d'un commentaire\n \n if(isset($_POST['add-comment'])){\n \n-   if(\n+   if(!empty($_\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676719049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n // sauvegarde d'un commentaire\n \n if(isset($_POST['add-comment'])){\n \n-   if(!empty($_\n+   if(!empty($_POST[]\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676728518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n // sauvegarde d'un commentaire\n \n if(isset($_POST['add-comment'])){\n \n-   if(!empty($_POST[]\n+   if(!empty($_POST['author'])\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676736273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n // sauvegarde d'un commentaire\n \n if(isset($_POST['add-comment'])){\n \n-   if(!empty($_POST['author'])\n+   if(!empty($_POST['author']) && !empty($_POST['comment'])\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676741926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,9 @@\n // sauvegarde d'un commentaire\n \n if(isset($_POST['add-comment'])){\n \n-   if(!empty($_POST['author']) && !empty($_POST['comment'])\n+   if(!empty($_POST['author']) && !empty($_POST['comment']){\n+\n+      \n+   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676765112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n if(isset($_POST['add-comment'])){\n \n    if(!empty($_POST['author']) && !empty($_POST['comment']){\n \n-      \n+      $\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676771912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n if(isset($_POST['add-comment'])){\n \n    if(!empty($_POST['author']) && !empty($_POST['comment']){\n \n-      $\n+      $author = $_POST['author'];\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676779259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,7 @@\n \n    if(!empty($_POST['author']) && !empty($_POST['comment']){\n \n       $author = $_POST['author'];\n+      $comment = $_POST['comment'];\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676787846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,6 +15,7 @@\n    if(!empty($_POST['author']) && !empty($_POST['comment']){\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n+      \n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676793529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,7 +15,7 @@\n    if(!empty($_POST['author']) && !empty($_POST['comment']){\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n-      \n+      $id= $_\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676815092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,7 +15,8 @@\n    if(!empty($_POST['author']) && !empty($_POST['comment']){\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n-      $id= $_\n+      $id= $_POST['id'];\n+      \n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676825043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n-      \n+      saveComment()\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676834912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n-      saveComment()\n+      saveComment($auteur,)\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676843866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n-      saveComment($auteur,)\n+      saveComment($aur,$)\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676851630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n-      saveComment($aur,$)\n+      saveComment($author,$id,)\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676856945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n-      saveComment($author,$id,)\n+      saveComment($author,$id,$comment)\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676862537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n-      saveComment($author,$id,$comment)\n+      saveComment($author,$id,$comment); \n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676872931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,8 @@\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n+      \n       saveComment($author,$id,$comment); \n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676885299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n-      \n+\n       saveComment($author,$id,$comment); \n+      header()\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676898420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,7 @@\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n \n       saveComment($author,$id,$comment); \n-      header()\n+      header('Location:single.php)\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676912827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,7 @@\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n \n       saveComment($author,$id,$comment); \n-      header('Location:single.php)\n+      header('Location:single.php?');\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676924737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,7 @@\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n \n       saveComment($author,$id,$comment); \n-      header('Location:single.php?');\n+      header('Location:single.php?id='.$);\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676930337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,7 @@\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n \n       saveComment($author,$id,$comment); \n-      header('Location:single.php?id='.$);\n+      header('Location:single.php?id='.$_POST['id']);\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676973696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,7 @@\n       $id= $_POST['id'];\n \n       saveComment($author,$id,$comment); \n       header('Location:single.php?id='.$_POST['id']);\n+      exit();\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677676983853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,6 @@\n       saveComment($author,$id,$comment); \n       header('Location:single.php?id='.$_POST['id']);\n       exit();\n    }\n+}\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677677003907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n // sauvegarde d'un commentaire\n \n if(isset($_POST['add-comment'])){\n \n-   if(!empty($_POST['author']) && !empty($_POST['comment']){\n+   if(!empty($_POST['author']) && !empty($_POST['comment'])){\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n@@ -22,5 +22,4 @@\n       header('Location:single.php?id='.$_POST['id']);\n       exit();\n    }\n }\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677677489106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n // sauvegarde d'un commentaire\n \n if(isset($_POST['add-comment'])){\n \n-   if(!empty($_POST['author']) && !empty($_POST['comment'])){\n+   if(!empty($_POST['auteur']) && !empty($_POST['comment'])){\n \n       $author = $_POST['author'];\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n"
+                },
+                {
+                    "date": 1677684720782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,13 +13,14 @@\n if(isset($_POST['add-comment'])){\n \n    if(!empty($_POST['auteur']) && !empty($_POST['comment'])){\n \n-      $author = $_POST['author'];\n+      $author = $_POST['auteur'];\n       $comment = $_POST['comment'];\n       $id= $_POST['id'];\n \n       saveComment($author,$id,$comment); \n       header('Location:single.php?id='.$_POST['id']);\n       exit();\n    }\n }\n+\n"
+                },
+                {
+                    "date": 1677684744398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,4 +23,20 @@\n       exit();\n    }\n }\n \n+if (isset($_POST['register'])) {\n+   if (isset($_POST['prenom']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password2'])) {\n+       $prenom = $_POST['prenom'];\n+       $email = $_POST['email'];\n+       $password = $_POST['password'];\n+       $password2 = $_POST['password2'];\n+       $role = \"user\";\n+       if ($password === $password2 && strlen($password) >= 6 && preg_match(\"/[a-z][0-9]/\", $password)) {\n+           $pass = password_hash($_POST['password'], PASSWORD_ARGON2ID);\n+           register($prenom, $pass, $email, $role);\n+           exit();\n+       }\n+   } \n+   \n+   }\n+   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677684820810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,20 +23,6 @@\n       exit();\n    }\n }\n \n-if (isset($_POST['register'])) {\n-   if (isset($_POST['prenom']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password2'])) {\n-       $prenom = $_POST['prenom'];\n-       $email = $_POST['email'];\n-       $password = $_POST['password'];\n-       $password2 = $_POST['password2'];\n-       $role = \"user\";\n-       if ($password === $password2 && strlen($password) >= 6 && preg_match(\"/[a-z][0-9]/\", $password)) {\n-           $pass = password_hash($_POST['password'], PASSWORD_ARGON2ID);\n-           register($prenom, $pass, $email, $role);\n-           exit();\n-       }\n-   } \n-   \n-   }\n-   }\n\\ No newline at end of file\n+\n+   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677694052293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,25 @@\n       header('Location:single.php?id='.$_POST['id']);\n       exit();\n    }\n }\n+if (isset($_POST['register'])) {\n \n \n+   if (isset($_POST['prenom']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password2'])) {\n+       $prenom = $_POST['prenom'];\n+       $email = $_POST['email'];\n+       $password = $_POST['password'];\n+       $password2 = $_POST['password2'];\n+       $role = \"user\";\n+      \n+       \n+       if ($password === $password2 && strlen($password) >= 6 && preg_match(\"/[a-z][0-9]/\", $password)) {\n+           $pass = password_hash($_POST['password'], PASSWORD_ARGON2ID);\n+           \n+           register($prenom, $pass, $email, $role);\n+          \n+           exit();\n+       }\n+   } \n+\n    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677694057819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,7 +40,7 @@\n            register($prenom, $pass, $email, $role);\n           \n            exit();\n        }\n-   } \n+   \n \n    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677694072718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,7 +40,8 @@\n            register($prenom, $pass, $email, $role);\n           \n            exit();\n        }\n-   \n+      }\n+   }\n \n    \n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1677596995229,
+            "name": "Commit-0",
+            "content": "<?php\n\n$id= '';\nif(isset($_GET['id']) && is_numeric($_GET['id'])){\n   $id = $_GET['id'];\n}\nif(empty($_GET['id'])){\n   die(\"cet article nexiste pas \");\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "sourceFile": "deconnection.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1677697863055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677697869469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+<\n+\n function Logout()\n {\n \n     session_start();\n"
+                },
+                {
+                    "date": 1677697875514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n-<\n+<?php\n \n function Logout()\n {\n \n     session_start();\n     session_destroy();\n     header('location:index.php?action=Home');\n     exit();\n\\ No newline at end of file\n-}\n+}\n+\n"
+                },
+                {
+                    "date": 1677697883341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <?php\n \n function Logout()\n {\n-\n     session_start();\n     session_destroy();\n-    header('location:index.php?action=Home');\n+    header('location:');\n     exit();\n }\n+\n"
+                },
+                {
+                    "date": 1677697889032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n function Logout()\n {\n     session_start();\n     session_destroy();\n-    header('location:');\n+    header('location:connect');\n     exit();\n }\n \n"
+                },
+                {
+                    "date": 1677697894499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n function Logout()\n {\n     session_start();\n     session_destroy();\n-    header('location:connect');\n+    header('location:connect.php');\n     exit();\n }\n \n"
+                },
+                {
+                    "date": 1677697979721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n function Logout()\n {\n     session_start();\n     session_destroy();\n-    header('location:connect.php');\n+    header('location:');\n     exit();\n }\n \n"
+                },
+                {
+                    "date": 1677697985474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n function Logout()\n {\n     session_start();\n     session_destroy();\n-    header('location:');\n+    header('location:home.phtml');\n     exit();\n }\n \n"
+                },
+                {
+                    "date": 1677698014636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <?php\n \n-function Logout()\n+\n {\n     session_start();\n     session_destroy();\n     header('location:home.phtml');\n"
+                },
+                {
+                    "date": 1677698028873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,7 @@\n <?php\n-\n-\n-{\n     session_start();\n     session_destroy();\n-    header('location:home.phtml');\n+    header('location:connect.php');\n     exit();\n-}\n \n+\n"
+                },
+                {
+                    "date": 1677698038878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n-    session_start();\n+    \n     session_destroy();\n     header('location:connect.php');\n     exit();\n \n"
+                },
+                {
+                    "date": 1677698046899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n-    \n+    session_start();\n     session_destroy();\n     header('location:connect.php');\n     exit();\n \n"
+                },
+                {
+                    "date": 1677698051954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n-    session_start();\n+    \n     session_destroy();\n     header('location:connect.php');\n     exit();\n \n"
+                },
+                {
+                    "date": 1677698058480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n-    \n+    session_start();\n     session_destroy();\n     header('location:connect.php');\n     exit();\n \n"
+                }
+            ],
+            "date": 1677697863055,
+            "name": "Commit-0",
+            "content": "function Logout()\n{\n\n    session_start();\n    session_destroy();\n    header('location:index.php?action=Home');\n    exit();\n}"
+        }
+    ]
+}

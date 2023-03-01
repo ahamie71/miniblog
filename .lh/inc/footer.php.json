@@ -1,0 +1,18 @@
+{
+    "sourceFile": "inc/footer.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1677597838163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1677597838163,
+            "name": "Commit-0",
+            "content": " <!-- footer -->\n <div class=\"footer\">\n            <div class=\"footer-content\">\n\n                <div class=\"footer-section about\">\n                    <h1 class=\"logo-text\"><span>READ</span>BLOG</h1>\n                    <p>\n                        READBLOG est un petit blog conçu pour un objectif de tutoriel sur Youtube.\n                        Cependant un autre vrai blog est en cours de réalisation pour mes amis.\n                    </p>\n                    <div class=\"contact\">\n                        <span><i class=\"fas fa-phone\"></i> &nbsp; (+229) 60 93 48 17</span>\n                        <span><i class=\"fas fa-envelope\"></i> &nbsp; ronasdev@gmail.com</span>\n                    </div>\n                    <div class=\"socials\">\n                        <a href=\"#\"><i class=\"fab fa-facebook\"></i></a>\n                        <a href=\"#\"><i class=\"fab fa-instagram\"></i></a>\n                        <a href=\"#\"><i class=\"fab fa-twitter\"></i></a>\n                        <a href=\"#\"><i class=\"fab fa-youtube\"></i></a>\n                    </div>\n                </div>\n\n                <div class=\"footer-section links\">\n                    <h2>Liens rapides</h2>\n                    <br>\n                    <ul>\n                        <a href=\"#\">\n                            <li>Evènements</li>\n                        </a>\n                        <a href=\"#\">\n                            <li>Equipe</li>\n                        </a>\n                        <a href=\"#\">\n                            <li>Mentoring</li>\n                        </a>\n                        <a href=\"#\">\n                            <li>Gallerie</li>\n                        </a>\n                        <a href=\"#\">\n                            <li>Termes et conditions</li>\n                        </a>\n                    </ul>\n                </div>\n\n                <div class=\"footer-section contact-form\">\n                    <h2>Contacter nous</h2>\n                    <br>\n                    <form action=\"index.html\" method=\"post\">\n                        <input type=\"email\" name=\"email\" class=\"text-input contact-input\"\n                            placeholder=\"Votre addresse e-mail...\">\n                        <textarea rows=\"4\" name=\"message\" class=\"text-input contact-input\"\n                            placeholder=\"Votre message...\"></textarea>\n                        <button type=\"submit\" class=\"btn btn-big contact-btn\">\n                            <i class=\"fas fa-envelope\"></i>\n                            Envoyer\n                        </button>\n                    </form>\n                </div>\n\n            </div>\n\n            <div class=\"footer-bottom\">\n                &copy; codingpoets.com | Designed by Awa Melvine\n            </div>\n        </div>"
+        }
+    ]
+}
